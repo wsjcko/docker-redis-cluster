@@ -1,0 +1,366 @@
+# 描述 Compose 文件的版本信息
+version: "3.9"
+
+# 定义服务，可以多个
+services:
+  redis-7001: #服务名称
+    image: redis #创建容器时所需的镜像
+    container_name: redis-7001 #容器名称
+    restart: on-failure:3
+    # restart: always #容器总是重新启动
+    # network_mode: "host" #host网络模式
+    networks:
+      redis_cluster_network:     
+    volumes: #数据卷，目录挂载
+      - ./redis/7001/data:/data
+      - ./redis/7001/conf/redis.conf:/usr/local/etc/redis/redis.conf
+    command: "redis-server /usr/local/etc/redis/redis.conf --port 7001 --requirepass dm5fD%rvPtq --masterauth dm5fD%rvPtq --cluster-announce-ip 172.30.149.130 --cluster-announce-port 8001 --cluster-announce-bus-port 18001 --cluster-config-file nodes.conf"
+    ports:
+      - "8001:7001"
+      - "18001:17001"
+
+  redis-7002: #服务名称
+    image: redis #创建容器时所需的镜像
+    container_name: redis-7002 #容器名称
+    restart: on-failure:3
+    networks:
+      redis_cluster_network:
+    volumes: #数据卷，目录挂载
+      - ./redis/7002/data:/data
+      - ./redis/7002/conf/redis.conf:/usr/local/etc/redis/redis.conf
+    command: "redis-server /usr/local/etc/redis/redis.conf --port 7002  --requirepass dm5fD%rvPtq --masterauth dm5fD%rvPtq --cluster-announce-ip 172.30.149.130 --cluster-announce-port 8002 --cluster-announce-bus-port 18002 --cluster-config-file nodes.conf"
+    ports:
+      - "8002:7002"
+      - "18002:17002"
+
+  redis-7003: #服务名称
+    image: redis #创建容器时所需的镜像
+    container_name: redis-7003 #容器名称
+    restart: on-failure:3
+    networks:
+      redis_cluster_network:
+    volumes: #数据卷，目录挂载
+      - ./redis/7003/data:/data
+      - ./redis/7003/conf/redis.conf:/usr/local/etc/redis/redis.conf
+    command: "redis-server /usr/local/etc/redis/redis.conf --port 7003 --requirepass dm5fD%rvPtq --masterauth dm5fD%rvPtq --cluster-announce-ip 172.30.149.130 --cluster-announce-port 8003 --cluster-announce-bus-port 18003 --cluster-config-file nodes.conf"
+    ports:
+      - "8003:7003"
+      - "18003:17003"
+
+  redis-7004: #服务名称
+    image: redis #创建容器时所需的镜像
+    container_name: redis-7004 #容器名称
+    restart: on-failure:3
+    networks:
+      redis_cluster_network:
+    volumes: #数据卷，目录挂载
+      - ./redis/7004/data:/data
+      - ./redis/7004/conf/redis.conf:/usr/local/etc/redis/redis.conf
+    command: "redis-server /usr/local/etc/redis/redis.conf --port 7004 --requirepass dm5fD%rvPtq 	--masterauth dm5fD%rvPtq --cluster-announce-ip 172.30.149.130 --cluster-announce-port 8004 --cluster-announce-bus-port 18004 --cluster-config-file nodes.conf"
+    ports:
+      - "8004:7004"
+      - "18004:17004"
+
+  redis-7005: #服务名称
+    image: redis #创建容器时所需的镜像
+    container_name: redis-7005 #容器名称
+    restart: on-failure:3
+    networks:
+      redis_cluster_network:
+    volumes: #数据卷，目录挂载
+      - ./redis/7005/data:/data
+      - ./redis/7005/conf/redis.conf:/usr/local/etc/redis/redis.conf
+    command: "redis-server /usr/local/etc/redis/redis.conf --port 7005 --requirepass dm5fD%rvPtq --masterauth dm5fD%rvPtq --cluster-announce-ip 172.30.149.130 --cluster-announce-port 8005 --cluster-announce-bus-port 18005 --cluster-config-file nodes.conf"
+    ports:
+      - "8005:7005"
+      - "18005:17005"
+
+  redis-7006: #服务名称
+    image: redis #创建容器时所需的镜像
+    container_name: redis-7006 #容器名称
+    restart: on-failure:3
+    networks:
+      redis_cluster_network:
+    volumes: #数据卷，目录挂载
+      - ./redis/7006/data:/data
+      - ./redis/7006/conf/redis.conf:/usr/local/etc/redis/redis.conf
+    command: "redis-server /usr/local/etc/redis/redis.conf --port 7006 --requirepass dm5fD%rvPtq --masterauth dm5fD%rvPtq --cluster-announce-ip 172.30.149.130 --cluster-announce-port 8006 --cluster-announce-bus-port 18006 --cluster-config-file nodes.conf"
+    ports:
+      - "8006:7006"
+      - "18006:17006"
+
+
+  redis-sentinel-7101:
+    image: redis
+    container_name: redis-sentinel-7101
+    ports:
+      - "7101:6379"
+    stdin_open: true
+    networks:
+      redis_cluster_network:
+    tty: true
+    privileged: true
+    volumes: 
+      - ./sentinel/7101/sentinel.conf:/usr/local/etc/redis/sentinel.conf
+    working_dir: /usr/local/etc/redis
+    depends_on: # redis-7001 正常启动后，sentinel才启动
+      - "redis-7001"
+    command: "redis-sentinel sentinel.conf"
+
+  redis-sentinel-7201:
+    image: redis
+    container_name: redis-sentinel-7201
+    ports:
+      - "7201:6379"
+    stdin_open: true
+    networks:
+      redis_cluster_network:
+    tty: true
+    privileged: true
+    volumes: 
+      - ./sentinel/7201/sentinel.conf:/usr/local/etc/redis/sentinel.conf
+    working_dir: /usr/local/etc/redis
+    depends_on:
+      - "redis-7001"
+    command: "redis-sentinel sentinel.conf"
+
+  redis-sentinel-7301:
+    image: redis
+    container_name: redis-sentinel-7301
+    ports:
+      - "7301:6379"
+    stdin_open: true
+    networks:
+      redis_cluster_network:
+    tty: true
+    privileged: true
+    volumes: 
+      - ./sentinel/7301/sentinel.conf:/usr/local/etc/redis/sentinel.conf
+    working_dir: /usr/local/etc/redis
+    depends_on:
+      - "redis-7001"
+    command: "redis-sentinel sentinel.conf"
+
+
+networks:
+  redis_cluster_network:
+
+
+# 混合持久化
+# aof-use-rdb-preamble yes
+
+# appendonly yes
+# save 300 100
+# save 60 10000
+
+
+# 注意外网访问 注释redis.conf # bind 127.0.0.1 -::1
+# cluster-enabled yes  #开启集群
+#集群配置信息文件，由Redis自行更新，不用手动配置。每个节点都有一个集群配置文件用于持久化保存集群信息，需确保与运行中实例的配置文件名    不冲突。
+#  cluster-config-file nodes.conf  # 不需要修改
+# cluster-node-timeout 5000  #节点互连超时时间，毫秒为单位
+#在进行故障转移的时候全部slave都会请求申请为master，但是有些slave可能与master断开连接一段时间了导致数据过于陈旧，不应该被提升为master。
+# 该参数就是用来判断slave节点与master断线的时间是否过长。
+# 判断方法是：比较slave断开连接的时间和(node-timeout * slave-validity-factor)+ repl-ping-slave-period如果节点超时时间为三十秒, 并且slave-validity-factor为10，
+# 假设默认的repl-ping-slave-period是10秒，即如果超过310秒slave将不会尝试进行故障转移
+# cluster-slave-validity-factor 10 
+#master的slave数量大于该值，slave才能迁移到其他孤立master上，如这个参数被设为2，那么只有当一个主节点拥有2个可工作的从节点时，它的一个从节点才会尝试迁移。
+# cluster-migration-barrier 1  
+# cluster-require-full-coverage yes  #集群所有节点状态为ok才提供服务。建议设置为no，可以在slot没有全部分配的时候提供服务。
+
+# 进入容器service: redis-7002
+#  docker-compose -f ./docker-compose.yml exec redis-7002 /bin/bash
+# 创建集群   命令里的1代表为每个创建的主服务器节点创建一个从服务器节点
+# redis-cli -a dm5fD%rvPtq  --cluster create 172.30.149.130:8001 172.30.149.130:8002 172.30.149.130:8003 172.30.149.130:8004 172.30.149.130:8005 172.30.149.130:8006 --cluster-replicas 1
+
+# 或者 手动配置
+
+# ubuntu 安装 redis-cli
+# sudo apt-get install redis-tools
+
+# redis-cli -a dm5fD%rvPtq  -h 172.30.149.130 -p 8003
+
+# 查看主从
+# 172.30.149.130:8003> info replication
+# # Replication
+# role:master
+# connected_slaves:1
+# slave0:ip=172.28.0.1,port=7006,state=online,offset=3682,lag=1
+# master_failover_state:no-failover
+# master_replid:86079819570d846c03129a32dc0f13572e19c710
+# master_replid2:0000000000000000000000000000000000000000
+# master_repl_offset:3682
+# second_repl_offset:-1
+# repl_backlog_active:1
+# repl_backlog_size:1048576
+# repl_backlog_first_byte_offset:1
+# repl_backlog_histlen:3682
+
+# 通过流言协议执行节点握手操作 [此处利用局域网或公网执行握手]
+# 172.30.149.130:8003> cluster meet 172.30.149.130 8001 
+# OK
+# 172.30.149.130:8003> cluster meet 172.30.149.130 8002
+# OK
+# 172.30.149.130:8003> cluster meet 172.30.149.130 8004
+# OK
+# 172.30.149.130:8003> cluster meet 172.30.149.130 8005
+# OK
+# 172.30.149.130:8003> cluster meet 172.30.149.130 8006
+# OK
+
+# cluster nodes：列出集群当前已知的所有节点（node）的相关信息
+# 172.30.149.130:8003> CLUSTER NODES
+# b1b78c78a396d39bbc0aece94c99bd3c59a22b47 172.30.149.130:8001@18001 master - 0 1657265541000 5 connected
+# c45e0ad6602cef609fc19b029b5e837baffc3f07 172.30.149.130:8003@18003 myself,master - 0 1657265540000 2 connected
+# c4e3cbb8bcf20b502ca88072b5d7a955e8ebad39 172.30.149.130:8005@18005 master - 0 1657265541000 0 connected
+# 55a08a29d6e99db627bb971846e1536260ef279a 172.30.149.130:8006@18006 master - 0 1657265542553 1 connected
+# 4b5f52f2496ef5dd64b25b5bdf83ca1da34d4dec 172.30.149.130:8002@18002 master - 0 1657265542052 4 connected
+# bb9b17abddd03f7620c9d2b17af3a0453e03e456 172.30.149.130:8004@18004 master - 0 1657265541851 3 connected
+
+# 打印集群的信息
+# 172.30.149.130:8003> CLUSTER info
+# cluster_state:fail
+# cluster_slots_assigned:0
+# cluster_slots_ok:0
+# cluster_slots_pfail:0
+# cluster_slots_fail:0
+# cluster_known_nodes:6
+# cluster_size:0
+# cluster_current_epoch:5
+# cluster_my_epoch:2
+# cluster_stats_messages_ping_sent:465
+# cluster_stats_messages_pong_sent:487
+# cluster_stats_messages_meet_sent:5
+# cluster_stats_messages_sent:957
+# cluster_stats_messages_ping_received:487
+# cluster_stats_messages_pong_received:470
+# cluster_stats_messages_received:957
+
+# 设置从节点 8001master : 8004slave, 8002master : 8005slave , 8003master: 8006slave
+# 进入单个redis实例8004 执行 replicaof 172.30.149.130 8001 (error) ERR REPLICAOF not allowed in cluster mode.
+# 使用如下 cluster replicate
+# redis-cli -a dm5fD%rvPtq -h 172.30.149.130 -p 8004 cluster replicate b1b78c78a396d39bbc0aece94c99bd3c59a22b47 [主节点的集群ID标识]
+# redis-cli -a dm5fD%rvPtq -h 172.30.149.130 -p 8005 cluster replicate 4b5f52f2496ef5dd64b25b5bdf83ca1da34d4dec
+# redis-cli -a dm5fD%rvPtq -h 172.30.149.130 -p 8006 cluster replicate c45e0ad6602cef609fc19b029b5e837baffc3f07
+
+# 172.30.149.130:8003> CLUSTER NODES
+# b1b78c78a396d39bbc0aece94c99bd3c59a22b47 172.30.149.130:8001@18001 master - 0 1657266752023 5 connected
+# c45e0ad6602cef609fc19b029b5e837baffc3f07 172.30.149.130:8003@18003 myself,master - 0 1657266753000 2 connected
+# c4e3cbb8bcf20b502ca88072b5d7a955e8ebad39 172.30.149.130:8005@18005 slave 4b5f52f2496ef5dd64b25b5bdf83ca1da34d4dec 0 1657266752225 4 connected
+# 55a08a29d6e99db627bb971846e1536260ef279a 172.30.149.130:8006@18006 slave c45e0ad6602cef609fc19b029b5e837baffc3f07 0 1657266753229 2 connected
+# 4b5f52f2496ef5dd64b25b5bdf83ca1da34d4dec 172.30.149.130:8002@18002 master - 0 1657266753731 4 connected
+# bb9b17abddd03f7620c9d2b17af3a0453e03e456 172.30.149.130:8004@18004 slave b1b78c78a396d39bbc0aece94c99bd3c59a22b47 0 1657266752225 5 connected
+
+# 为主节点分配槽(总16384)
+# redis-cli -h 172.30.149.130 -p 8001 -a dm5fD%rvPtq cluster addslots {0..5500}
+# redis-cli -h 172.30.149.130 -p 8002 -a dm5fD%rvPtq cluster addslots {5501..11000}
+# redis-cli -h 172.30.149.130 -p 8003 -a dm5fD%rvPtq cluster addslots {11001..16383}
+
+# 172.30.149.130:8003> CLUSTER NODES
+# b1b78c78a396d39bbc0aece94c99bd3c59a22b47 172.30.149.130:8001@18001 master - 0 1657266933000 5 connected 0-5500
+# c45e0ad6602cef609fc19b029b5e837baffc3f07 172.30.149.130:8003@18003 myself,master - 0 1657266933000 2 connected 11001-16383
+# c4e3cbb8bcf20b502ca88072b5d7a955e8ebad39 172.30.149.130:8005@18005 slave 4b5f52f2496ef5dd64b25b5bdf83ca1da34d4dec 0 1657266933955 4 connected
+# 55a08a29d6e99db627bb971846e1536260ef279a 172.30.149.130:8006@18006 slave c45e0ad6602cef609fc19b029b5e837baffc3f07 0 1657266933000 2 connected
+# 4b5f52f2496ef5dd64b25b5bdf83ca1da34d4dec 172.30.149.130:8002@18002 master - 0 1657266933000 4 connected 5501-11000
+# bb9b17abddd03f7620c9d2b17af3a0453e03e456 172.30.149.130:8004@18004 slave b1b78c78a396d39bbc0aece94c99bd3c59a22b47 0 1657266933554 5 connected
+
+# 操作redis执行set操作【没有指定集群模式】：
+# 172.30.149.130:8003> set name wsjcko
+# (error) MOVED 5798 172.30.149.130:8002
+# 172.30.149.130:8003> get name
+# (error) MOVED 5798 172.30.149.130:8002
+
+# set，get操作都得到指定的槽中操作，不然key无法执行set，get操作
+# 【说明：数据插入一定要到到对应的槽区执行数据插入的操作】
+
+# 集群模式下操作Redis  -c
+# ➜  ~ redis-cli -a dm5fD%rvPtq -p 8003 -h 172.30.149.130 -c set name wsjcko
+# OK
+# ➜  ~ redis-cli -a dm5fD%rvPtq -p 8003 -h 172.30.149.130 -c get name
+# "wsjcko"
+
+# cluster 命令
+# CLUSTER info：打印集群的信息。
+# CLUSTER nodes：列出集群当前已知的所有节点（node）的相关信息。
+# CLUSTER meet <ip> <port>：将ip和port所指定的节点添加到集群当中。
+# CLUSTER addslots <slot> [slot ...]：将一个或多个槽（slot）指派（assign）给当前节点。
+# CLUSTER delslots <slot> [slot ...]：移除一个或多个槽对当前节点的指派。
+
+# CLUSTER slots：列出槽位、节点信息。
+# 172.30.149.130:8003> CLUSTER SLOTS
+# 1) 1) (integer) 0
+#    2) (integer) 5500
+#    3) 1) "172.30.149.130"
+#       2) (integer) 8001
+#       3) "b1b78c78a396d39bbc0aece94c99bd3c59a22b47"
+#    4) 1) "172.30.149.130"
+#       2) (integer) 8004
+#       3) "bb9b17abddd03f7620c9d2b17af3a0453e03e456"
+# 2) 1) (integer) 5501
+#    2) (integer) 11000
+#    3) 1) "172.30.149.130"
+#       2) (integer) 8002
+#       3) "4b5f52f2496ef5dd64b25b5bdf83ca1da34d4dec"
+#    4) 1) "172.30.149.130"
+#       2) (integer) 8005
+#       3) "c4e3cbb8bcf20b502ca88072b5d7a955e8ebad39"
+# 3) 1) (integer) 11001
+#    2) (integer) 16383
+#    3) 1) "172.30.149.130"
+#       2) (integer) 8003
+#       3) "c45e0ad6602cef609fc19b029b5e837baffc3f07"
+#    4) 1) "172.30.149.130"
+#       2) (integer) 8006
+#       3) "55a08a29d6e99db627bb971846e1536260ef279a"
+
+# CLUSTER slaves <node_id>：列出指定节点下面的从节点信息。 8001的从节点8004
+# 172.30.149.130:8003> CLUSTER SLAVES b1b78c78a396d39bbc0aece94c99bd3c59a22b47
+# 1) "bb9b17abddd03f7620c9d2b17af3a0453e03e456 172.30.149.130:8004@18004 slave b1b78c78a396d39bbc0aece94c99bd3c59a22b47 0 1657267536387 5 connected"
+
+# CLUSTER replicate <node_id>：将当前节点设置为指定节点的从节点。
+# CLUSTER saveconfig：手动执行命令保存保存集群的配置文件，集群默认在配置修改的时候会自动保存配置文件。
+
+# CLUSTER keyslot <key>：列出key被放置在哪个槽上。
+# 172.30.149.130:8003> cluster keyslot name
+# (integer) 5798
+#  redis-cli -a dm5fD%rvPtq -p 8002 -h 172.30.149.130 -c cluster keyslot name
+
+# CLUSTER flushslots：移除指派给当前节点的所有槽，让当前节点变成一个没有指派任何槽的节点。
+# CLUSTER countkeysinslot <slot>：返回槽目前包含的键值对数量。 只查询连接节点的数据集
+#  redis-cli -a dm5fD%rvPtq -p 8003 -h 172.30.149.130 -c CLUSTER countkeysinslot 5798
+#  (integer) 0
+#  redis-cli -a dm5fD%rvPtq -p 8002 -h 172.30.149.130 -c CLUSTER countkeysinslot 5798
+#  (integer) 1
+
+# CLUSTER getkeysinslot <slot> <count>：返回count个槽中的键。只查询连接节点的数据集
+#  redis-cli -a dm5fD%rvPtq -p 8002 -h 172.30.149.130 -c CLUSTER getkeysinslot 6659 2
+# 1) "names"
+# CLUSTER setslot <slot> node <node_id> 将槽指派给指定的节点，如果槽已经指派给另一个节点，那么先让另一个节点删除该槽，然后再进行指派。  
+# CLUSTER setslot <slot> migrating <node_id> 将本节点的槽迁移到指定的节点中。  
+# CLUSTER setslot <slot> importing <node_id> 从 node_id 指定的节点中导入槽 slot 到本节点。  
+# CLUSTER setslot <slot> stable 取消对槽 slot 的导入（import）或者迁移（migrate）。 
+
+# CLUSTER failover：手动进行故障转移。
+# CLUSTER forget <node_id>：从集群中移除指定的节点，这样就无法完成握手，过期时为60s，60s后两节点又会继续完成握手。
+# CLUSTER reset [HARD|SOFT]：重置集群信息，soft是清空其他节点的信息，但不修改自己的id，hard还会修改自己的id，不传该参数则使用soft方式。
+
+# CLUSTER count-failure-reports <node_id>：列出某个节点的故障报告的长度。
+# CLUSTER SET-CONFIG-EPOCH：设置节点epoch，只有在节点加入集群前才能设置。
+
+# 停止7003master, 故障转移，自动切换为slave7006,7006转换为master, 后面重启7003,7003只能是slave,可以一直通过 cluster nodes 查看完整过程
+# ➜  docker-redis-cluster docker-compose -f ./docker-compose.yml stop  redis-7003
+
+# Sentinel 哨兵集群 +主从
+# ➜  docker-redis-cluster docker-compose -f ./docker-compose.yml exec redis-sentinel-7301 /bin/bash
+# ➜  docker-redis-cluster docker-compose -f ./docker-compose.yml exec redis-sentinel-7201 /bin/bash
+# ➜  docker-redis-cluster docker-compose -f ./docker-compose.yml exec redis-sentinel-7101 /bin/bash
+# 三个都一样可以看到 master0:name=redis-7001,status=ok,address=172.30.149.130:8001,slaves=1,sentinels=3
+# root@7fb720a2697d:/usr/local/etc/redis# redis-cli
+# 127.0.0.1:6379> info sentinel
+# # Sentinel
+# sentinel_masters:1
+# sentinel_tilt:0
+# sentinel_running_scripts:0
+# sentinel_scripts_queue_length:0
+# sentinel_simulate_failure_flags:0
+# master0:name=redis-7001,status=ok,address=172.30.149.130:8001,slaves=1,sentinels=3

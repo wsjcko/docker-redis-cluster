@@ -1,0 +1,289 @@
+1:C 08 Jul 2022 07:22:21.239 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+1:C 08 Jul 2022 07:22:21.239 # Redis version=6.2.6, bits=64, commit=00000000, modified=0, pid=1, just started
+1:C 08 Jul 2022 07:22:21.239 # Configuration loaded
+1:M 08 Jul 2022 07:22:21.240 * monotonic clock: POSIX clock_gettime
+1:M 08 Jul 2022 07:22:21.240 * No cluster configuration found, I'm b1b78c78a396d39bbc0aece94c99bd3c59a22b47
+1:M 08 Jul 2022 07:22:21.245 * Running mode=cluster, port=7001.
+1:M 08 Jul 2022 07:22:21.245 # Server initialized
+1:M 08 Jul 2022 07:22:21.245 * Ready to accept connections
+1:signal-handler (1657265090) Received SIGTERM scheduling shutdown...
+1:M 08 Jul 2022 07:24:50.099 # User requested shutdown...
+1:M 08 Jul 2022 07:24:50.099 * Calling fsync() on the AOF file.
+1:M 08 Jul 2022 07:24:50.101 * Saving the final RDB snapshot before exiting.
+1:M 08 Jul 2022 07:24:50.105 * DB saved on disk
+1:M 08 Jul 2022 07:24:50.105 * Removing the pid file.
+1:M 08 Jul 2022 07:24:50.105 # Redis is now ready to exit, bye bye...
+1:C 08 Jul 2022 07:31:23.492 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+1:C 08 Jul 2022 07:31:23.492 # Redis version=6.2.6, bits=64, commit=00000000, modified=0, pid=1, just started
+1:C 08 Jul 2022 07:31:23.492 # Configuration loaded
+1:M 08 Jul 2022 07:31:23.493 * monotonic clock: POSIX clock_gettime
+1:M 08 Jul 2022 07:31:23.493 * Node configuration loaded, I'm b1b78c78a396d39bbc0aece94c99bd3c59a22b47
+1:M 08 Jul 2022 07:31:23.493 * Running mode=cluster, port=7001.
+1:M 08 Jul 2022 07:31:23.493 # Server initialized
+1:M 08 Jul 2022 07:31:23.494 * Ready to accept connections
+1:M 08 Jul 2022 07:42:08.067 * Replica 172.28.0.1:7004 asks for synchronization
+1:M 08 Jul 2022 07:42:08.067 * Partial resynchronization not accepted: Replication ID mismatch (Replica asked for '26d654230b62e38205f4b0297c78ee0b8282916b', my replication IDs are '337ce3dd35b2c04e7337d478a6f243c563bc9025' and '0000000000000000000000000000000000000000')
+1:M 08 Jul 2022 07:42:08.068 * Replication backlog created, my new replication IDs are 'ac293bbdc004e01f277eb47fb698feded452d6c6' and '0000000000000000000000000000000000000000'
+1:M 08 Jul 2022 07:42:08.068 * Starting BGSAVE for SYNC with target: disk
+1:M 08 Jul 2022 07:42:08.068 * Background saving started by pid 19
+19:C 08 Jul 2022 07:42:08.073 * DB saved on disk
+19:C 08 Jul 2022 07:42:08.073 * RDB: 0 MB of memory used by copy-on-write
+1:M 08 Jul 2022 07:42:08.073 * Background saving terminated with success
+1:M 08 Jul 2022 07:42:08.074 * Synchronization with replica 172.28.0.1:7004 succeeded
+1:M 08 Jul 2022 07:55:07.457 # Cluster state changed: ok
+1:signal-handler (1657294463) Received SIGTERM scheduling shutdown...
+1:M 08 Jul 2022 15:34:23.972 # User requested shutdown...
+1:M 08 Jul 2022 15:34:23.972 * Calling fsync() on the AOF file.
+1:M 08 Jul 2022 15:34:23.973 * Saving the final RDB snapshot before exiting.
+1:M 08 Jul 2022 15:34:23.985 * DB saved on disk
+1:M 08 Jul 2022 15:34:23.985 * Removing the pid file.
+1:M 08 Jul 2022 15:34:23.985 # Redis is now ready to exit, bye bye...
+1:C 08 Jul 2022 15:34:44.136 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+1:C 08 Jul 2022 15:34:44.136 # Redis version=6.2.6, bits=64, commit=00000000, modified=0, pid=1, just started
+1:C 08 Jul 2022 15:34:44.136 # Configuration loaded
+1:M 08 Jul 2022 15:34:44.137 * monotonic clock: POSIX clock_gettime
+1:M 08 Jul 2022 15:34:44.137 * Node configuration loaded, I'm b1b78c78a396d39bbc0aece94c99bd3c59a22b47
+1:M 08 Jul 2022 15:34:44.137 * Running mode=cluster, port=7001.
+1:M 08 Jul 2022 15:34:44.138 # Server initialized
+1:M 08 Jul 2022 15:34:44.138 * Ready to accept connections
+1:M 08 Jul 2022 15:34:44.807 * Replica 172.29.0.1:7004 asks for synchronization
+1:M 08 Jul 2022 15:34:44.807 * Partial resynchronization not accepted: Replication ID mismatch (Replica asked for 'db3314ae1ad6ebc38931e38fae8648022cf713b5', my replication IDs are '702ae17d484bbb120237a2eab9a46543c37d1418' and '0000000000000000000000000000000000000000')
+1:M 08 Jul 2022 15:34:44.807 * Replication backlog created, my new replication IDs are 'dc0befd1e5beeac810dfd1c938bd6225f152dc56' and '0000000000000000000000000000000000000000'
+1:M 08 Jul 2022 15:34:44.807 * Starting BGSAVE for SYNC with target: disk
+1:M 08 Jul 2022 15:34:44.807 * Background saving started by pid 19
+19:C 08 Jul 2022 15:34:44.812 * DB saved on disk
+19:C 08 Jul 2022 15:34:44.812 * RDB: 0 MB of memory used by copy-on-write
+1:M 08 Jul 2022 15:34:44.842 * Background saving terminated with success
+1:M 08 Jul 2022 15:34:44.843 * Synchronization with replica 172.29.0.1:7004 succeeded
+1:M 08 Jul 2022 15:34:46.148 # Cluster state changed: ok
+1:M 08 Jul 2022 15:39:07.158 # Connection with replica 172.29.0.1:7004 lost.
+1:signal-handler (1657294749) Received SIGTERM scheduling shutdown...
+1:M 08 Jul 2022 15:39:09.180 # User requested shutdown...
+1:M 08 Jul 2022 15:39:09.180 * Calling fsync() on the AOF file.
+1:M 08 Jul 2022 15:39:09.181 * Saving the final RDB snapshot before exiting.
+1:M 08 Jul 2022 15:39:09.185 * DB saved on disk
+1:M 08 Jul 2022 15:39:09.186 * Removing the pid file.
+1:M 08 Jul 2022 15:39:09.186 # Redis is now ready to exit, bye bye...
+1:C 08 Jul 2022 15:39:49.956 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+1:C 08 Jul 2022 15:39:49.956 # Redis version=6.2.6, bits=64, commit=00000000, modified=0, pid=1, just started
+1:C 08 Jul 2022 15:39:49.956 # Configuration loaded
+1:M 08 Jul 2022 15:39:49.956 * monotonic clock: POSIX clock_gettime
+1:M 08 Jul 2022 15:39:49.957 * Node configuration loaded, I'm b1b78c78a396d39bbc0aece94c99bd3c59a22b47
+1:M 08 Jul 2022 15:39:49.957 * Running mode=cluster, port=7001.
+1:M 08 Jul 2022 15:39:49.957 # Server initialized
+1:M 08 Jul 2022 15:39:49.957 * Ready to accept connections
+1:M 08 Jul 2022 15:39:51.962 # Cluster state changed: ok
+1:M 08 Jul 2022 15:39:57.476 # Cluster state changed: fail
+1:signal-handler (1657296587) Received SIGTERM scheduling shutdown...
+1:M 08 Jul 2022 16:09:47.243 # User requested shutdown...
+1:M 08 Jul 2022 16:09:47.243 * Calling fsync() on the AOF file.
+1:M 08 Jul 2022 16:09:47.245 * Saving the final RDB snapshot before exiting.
+1:M 08 Jul 2022 16:09:47.249 * DB saved on disk
+1:M 08 Jul 2022 16:09:47.249 * Removing the pid file.
+1:M 08 Jul 2022 16:09:47.249 # Redis is now ready to exit, bye bye...
+1:C 08 Jul 2022 16:09:49.632 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+1:C 08 Jul 2022 16:09:49.632 # Redis version=6.2.6, bits=64, commit=00000000, modified=0, pid=1, just started
+1:C 08 Jul 2022 16:09:49.632 # Configuration loaded
+1:M 08 Jul 2022 16:09:49.633 * monotonic clock: POSIX clock_gettime
+1:M 08 Jul 2022 16:09:49.633 * Node configuration loaded, I'm b1b78c78a396d39bbc0aece94c99bd3c59a22b47
+1:M 08 Jul 2022 16:09:49.634 * Running mode=cluster, port=7001.
+1:M 08 Jul 2022 16:09:49.634 # Server initialized
+1:M 08 Jul 2022 16:09:49.634 * Ready to accept connections
+1:M 08 Jul 2022 16:09:51.640 # Cluster state changed: ok
+1:M 08 Jul 2022 16:09:57.157 # Cluster state changed: fail
+1:signal-handler (1657296695) Received SIGTERM scheduling shutdown...
+1:M 08 Jul 2022 16:11:35.817 # User requested shutdown...
+1:M 08 Jul 2022 16:11:35.817 * Calling fsync() on the AOF file.
+1:M 08 Jul 2022 16:11:35.818 * Saving the final RDB snapshot before exiting.
+1:M 08 Jul 2022 16:11:35.823 * DB saved on disk
+1:M 08 Jul 2022 16:11:35.823 * Removing the pid file.
+1:M 08 Jul 2022 16:11:35.823 # Redis is now ready to exit, bye bye...
+1:C 08 Jul 2022 16:11:40.638 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+1:C 08 Jul 2022 16:11:40.638 # Redis version=6.2.6, bits=64, commit=00000000, modified=0, pid=1, just started
+1:C 08 Jul 2022 16:11:40.638 # Configuration loaded
+1:M 08 Jul 2022 16:11:40.638 * monotonic clock: POSIX clock_gettime
+1:M 08 Jul 2022 16:11:40.639 * Node configuration loaded, I'm b1b78c78a396d39bbc0aece94c99bd3c59a22b47
+1:M 08 Jul 2022 16:11:40.639 * Running mode=cluster, port=7001.
+1:M 08 Jul 2022 16:11:40.639 # Server initialized
+1:M 08 Jul 2022 16:11:40.639 * Ready to accept connections
+1:M 08 Jul 2022 16:11:42.645 # Cluster state changed: ok
+1:M 08 Jul 2022 16:11:48.159 # Cluster state changed: fail
+1:signal-handler (1657296779) Received SIGTERM scheduling shutdown...
+1:M 08 Jul 2022 16:12:59.437 # User requested shutdown...
+1:M 08 Jul 2022 16:12:59.437 * Calling fsync() on the AOF file.
+1:M 08 Jul 2022 16:12:59.438 * Saving the final RDB snapshot before exiting.
+1:M 08 Jul 2022 16:12:59.444 * DB saved on disk
+1:M 08 Jul 2022 16:12:59.444 * Removing the pid file.
+1:M 08 Jul 2022 16:12:59.444 # Redis is now ready to exit, bye bye...
+1:C 08 Jul 2022 16:13:18.135 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+1:C 08 Jul 2022 16:13:18.135 # Redis version=6.2.6, bits=64, commit=00000000, modified=0, pid=1, just started
+1:C 08 Jul 2022 16:13:18.135 # Configuration loaded
+1:M 08 Jul 2022 16:13:18.136 * monotonic clock: POSIX clock_gettime
+1:M 08 Jul 2022 16:13:18.136 * Node configuration loaded, I'm b1b78c78a396d39bbc0aece94c99bd3c59a22b47
+1:M 08 Jul 2022 16:13:18.137 * Running mode=cluster, port=7001.
+1:M 08 Jul 2022 16:13:18.137 # Server initialized
+1:M 08 Jul 2022 16:13:18.137 * Ready to accept connections
+1:M 08 Jul 2022 16:13:19.046 * Replica 172.31.0.1:7004 asks for synchronization
+1:M 08 Jul 2022 16:13:19.046 * Partial resynchronization not accepted: Replication ID mismatch (Replica asked for 'ed437cd0685ba8810a643d0692d2620aae0e216f', my replication IDs are '5fb13ebebdbe37dbe05910eed5e66f172221dd5a' and '0000000000000000000000000000000000000000')
+1:M 08 Jul 2022 16:13:19.046 * Replication backlog created, my new replication IDs are '727da5cae5d37b5d71e90069066cfc3fa9fe10dc' and '0000000000000000000000000000000000000000'
+1:M 08 Jul 2022 16:13:19.046 * Starting BGSAVE for SYNC with target: disk
+1:M 08 Jul 2022 16:13:19.046 * Background saving started by pid 20
+20:C 08 Jul 2022 16:13:19.051 * DB saved on disk
+20:C 08 Jul 2022 16:13:19.052 * RDB: 0 MB of memory used by copy-on-write
+1:M 08 Jul 2022 16:13:19.143 * Background saving terminated with success
+1:M 08 Jul 2022 16:13:19.143 * Synchronization with replica 172.31.0.1:7004 succeeded
+1:M 08 Jul 2022 16:13:20.148 # Cluster state changed: ok
+1:M 08 Jul 2022 16:14:45.481 # Connection with replica 172.31.0.1:7004 lost.
+1:signal-handler (1657296885) Received SIGTERM scheduling shutdown...
+1:M 08 Jul 2022 16:14:45.601 # User requested shutdown...
+1:M 08 Jul 2022 16:14:45.601 * Calling fsync() on the AOF file.
+1:M 08 Jul 2022 16:14:45.603 * Saving the final RDB snapshot before exiting.
+1:M 08 Jul 2022 16:14:45.607 * DB saved on disk
+1:M 08 Jul 2022 16:14:45.608 * Removing the pid file.
+1:M 08 Jul 2022 16:14:45.608 # Redis is now ready to exit, bye bye...
+1:C 08 Jul 2022 16:15:04.587 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+1:C 08 Jul 2022 16:15:04.587 # Redis version=6.2.6, bits=64, commit=00000000, modified=0, pid=1, just started
+1:C 08 Jul 2022 16:15:04.587 # Configuration loaded
+1:M 08 Jul 2022 16:15:04.588 * monotonic clock: POSIX clock_gettime
+1:M 08 Jul 2022 16:15:04.588 * Node configuration loaded, I'm b1b78c78a396d39bbc0aece94c99bd3c59a22b47
+1:M 08 Jul 2022 16:15:04.588 * Running mode=cluster, port=7001.
+1:M 08 Jul 2022 16:15:04.588 # Server initialized
+1:M 08 Jul 2022 16:15:04.589 * Ready to accept connections
+1:M 08 Jul 2022 16:15:04.982 * Replica 192.168.0.1:7004 asks for synchronization
+1:M 08 Jul 2022 16:15:04.982 * Partial resynchronization not accepted: Replication ID mismatch (Replica asked for '8a49e511adbf9359fb227efd1949de76d4346e6e', my replication IDs are '0d40b785fce446d5538350818cf4495fc287e8bf' and '0000000000000000000000000000000000000000')
+1:M 08 Jul 2022 16:15:04.982 * Replication backlog created, my new replication IDs are '064ca3bf5eb035faca00b0d5d39316a1dc9fba33' and '0000000000000000000000000000000000000000'
+1:M 08 Jul 2022 16:15:04.982 * Starting BGSAVE for SYNC with target: disk
+1:M 08 Jul 2022 16:15:04.982 * Background saving started by pid 19
+19:C 08 Jul 2022 16:15:04.986 * DB saved on disk
+19:C 08 Jul 2022 16:15:04.986 * RDB: 0 MB of memory used by copy-on-write
+1:M 08 Jul 2022 16:15:04.993 * Background saving terminated with success
+1:M 08 Jul 2022 16:15:04.993 * Synchronization with replica 192.168.0.1:7004 succeeded
+1:M 08 Jul 2022 16:15:06.600 # Cluster state changed: ok
+1:M 08 Jul 2022 16:15:51.731 # Connection with replica 192.168.0.1:7004 lost.
+1:signal-handler (1657296951) Received SIGTERM scheduling shutdown...
+1:M 08 Jul 2022 16:15:51.779 # User requested shutdown...
+1:M 08 Jul 2022 16:15:51.779 * Calling fsync() on the AOF file.
+1:M 08 Jul 2022 16:15:51.780 * Saving the final RDB snapshot before exiting.
+1:M 08 Jul 2022 16:15:51.784 * DB saved on disk
+1:M 08 Jul 2022 16:15:51.784 * Removing the pid file.
+1:M 08 Jul 2022 16:15:51.784 # Redis is now ready to exit, bye bye...
+1:C 08 Jul 2022 16:16:10.185 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+1:C 08 Jul 2022 16:16:10.185 # Redis version=6.2.6, bits=64, commit=00000000, modified=0, pid=1, just started
+1:C 08 Jul 2022 16:16:10.185 # Configuration loaded
+1:M 08 Jul 2022 16:16:10.185 * monotonic clock: POSIX clock_gettime
+1:M 08 Jul 2022 16:16:10.186 * Node configuration loaded, I'm b1b78c78a396d39bbc0aece94c99bd3c59a22b47
+1:M 08 Jul 2022 16:16:10.186 * Running mode=cluster, port=7001.
+1:M 08 Jul 2022 16:16:10.186 # Server initialized
+1:M 08 Jul 2022 16:16:10.186 * Ready to accept connections
+1:M 08 Jul 2022 16:16:12.192 # Cluster state changed: ok
+1:M 08 Jul 2022 16:16:13.983 * Replica 192.168.16.1:7004 asks for synchronization
+1:M 08 Jul 2022 16:16:13.983 * Partial resynchronization not accepted: Replication ID mismatch (Replica asked for '959757291af91d6d9a3219808b66f03536122c16', my replication IDs are 'd351b9fd197b1bc8b6a4f2a1093019220501ada0' and '0000000000000000000000000000000000000000')
+1:M 08 Jul 2022 16:16:13.983 * Replication backlog created, my new replication IDs are '4f7178d9f75e263425cff181f81e5542e66870af' and '0000000000000000000000000000000000000000'
+1:M 08 Jul 2022 16:16:13.983 * Starting BGSAVE for SYNC with target: disk
+1:M 08 Jul 2022 16:16:13.983 * Background saving started by pid 19
+19:C 08 Jul 2022 16:16:13.987 * DB saved on disk
+19:C 08 Jul 2022 16:16:13.987 * RDB: 0 MB of memory used by copy-on-write
+1:M 08 Jul 2022 16:16:14.000 * Background saving terminated with success
+1:M 08 Jul 2022 16:16:14.000 * Synchronization with replica 192.168.16.1:7004 succeeded
+1:M 08 Jul 2022 16:37:33.293 # Connection with replica 192.168.16.1:7004 lost.
+1:signal-handler (1657298257) Received SIGTERM scheduling shutdown...
+1:M 08 Jul 2022 16:37:37.170 # User requested shutdown...
+1:M 08 Jul 2022 16:37:37.170 * Calling fsync() on the AOF file.
+1:M 08 Jul 2022 16:37:37.172 * Saving the final RDB snapshot before exiting.
+1:M 08 Jul 2022 16:37:37.176 * DB saved on disk
+1:M 08 Jul 2022 16:37:37.176 * Removing the pid file.
+1:M 08 Jul 2022 16:37:37.176 # Redis is now ready to exit, bye bye...
+1:C 08 Jul 2022 16:37:52.102 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+1:C 08 Jul 2022 16:37:52.102 # Redis version=6.2.6, bits=64, commit=00000000, modified=0, pid=1, just started
+1:C 08 Jul 2022 16:37:52.102 # Configuration loaded
+1:M 08 Jul 2022 16:37:52.103 * monotonic clock: POSIX clock_gettime
+1:M 08 Jul 2022 16:37:52.103 * Node configuration loaded, I'm b1b78c78a396d39bbc0aece94c99bd3c59a22b47
+1:M 08 Jul 2022 16:37:52.104 * Running mode=cluster, port=7001.
+1:M 08 Jul 2022 16:37:52.104 # Server initialized
+1:M 08 Jul 2022 16:37:52.104 * Ready to accept connections
+1:M 08 Jul 2022 16:37:52.958 * Replica 192.168.32.1:7004 asks for synchronization
+1:M 08 Jul 2022 16:37:52.958 * Partial resynchronization not accepted: Replication ID mismatch (Replica asked for 'e032273e0c48c9d8bc573dc280fd40e8637cee7d', my replication IDs are '853a2801f53d64159fc4c89aba922f77ec236859' and '0000000000000000000000000000000000000000')
+1:M 08 Jul 2022 16:37:52.958 * Replication backlog created, my new replication IDs are '9376a62aa029f9e63d7b45173e26432c9f9127fe' and '0000000000000000000000000000000000000000'
+1:M 08 Jul 2022 16:37:52.958 * Starting BGSAVE for SYNC with target: disk
+1:M 08 Jul 2022 16:37:52.958 * Background saving started by pid 19
+19:C 08 Jul 2022 16:37:52.963 * DB saved on disk
+19:C 08 Jul 2022 16:37:52.963 * RDB: 0 MB of memory used by copy-on-write
+1:M 08 Jul 2022 16:37:53.007 * Background saving terminated with success
+1:M 08 Jul 2022 16:37:53.007 * Synchronization with replica 192.168.32.1:7004 succeeded
+1:M 08 Jul 2022 16:37:54.112 # Cluster state changed: ok
+1:M 08 Jul 2022 16:40:02.528 # Connection with replica 192.168.32.1:7004 lost.
+1:signal-handler (1657298405) Received SIGTERM scheduling shutdown...
+1:M 08 Jul 2022 16:40:05.082 # User requested shutdown...
+1:M 08 Jul 2022 16:40:05.082 * Calling fsync() on the AOF file.
+1:M 08 Jul 2022 16:40:05.084 * Saving the final RDB snapshot before exiting.
+1:M 08 Jul 2022 16:40:05.087 * DB saved on disk
+1:M 08 Jul 2022 16:40:05.087 * Removing the pid file.
+1:M 08 Jul 2022 16:40:05.088 # Redis is now ready to exit, bye bye...
+1:C 08 Jul 2022 16:40:17.654 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+1:C 08 Jul 2022 16:40:17.654 # Redis version=6.2.6, bits=64, commit=00000000, modified=0, pid=1, just started
+1:C 08 Jul 2022 16:40:17.654 # Configuration loaded
+1:M 08 Jul 2022 16:40:17.655 * monotonic clock: POSIX clock_gettime
+1:M 08 Jul 2022 16:40:17.655 * Node configuration loaded, I'm b1b78c78a396d39bbc0aece94c99bd3c59a22b47
+1:M 08 Jul 2022 16:40:17.655 * Running mode=cluster, port=7001.
+1:M 08 Jul 2022 16:40:17.655 # Server initialized
+1:M 08 Jul 2022 16:40:17.656 * Ready to accept connections
+1:M 08 Jul 2022 16:40:18.870 * Replica 192.168.80.1:7004 asks for synchronization
+1:M 08 Jul 2022 16:40:18.870 * Partial resynchronization not accepted: Replication ID mismatch (Replica asked for '23f84b4e270795a0717f325f716af15b11178531', my replication IDs are 'f3ceea3d0819b053eb17d8f1db0c9df6acf04476' and '0000000000000000000000000000000000000000')
+1:M 08 Jul 2022 16:40:18.870 * Replication backlog created, my new replication IDs are '36af1c806e41b7fe2ac00a071995725dd04bdd3f' and '0000000000000000000000000000000000000000'
+1:M 08 Jul 2022 16:40:18.870 * Starting BGSAVE for SYNC with target: disk
+1:M 08 Jul 2022 16:40:18.870 * Background saving started by pid 19
+19:C 08 Jul 2022 16:40:18.874 * DB saved on disk
+19:C 08 Jul 2022 16:40:18.874 * RDB: 0 MB of memory used by copy-on-write
+1:M 08 Jul 2022 16:40:18.959 * Background saving terminated with success
+1:M 08 Jul 2022 16:40:18.960 * Synchronization with replica 192.168.80.1:7004 succeeded
+1:M 08 Jul 2022 16:40:19.663 # Cluster state changed: ok
+1:M 08 Jul 2022 16:48:12.389 # Connection with replica 192.168.80.1:7004 lost.
+1:signal-handler (1657298892) Received SIGTERM scheduling shutdown...
+1:M 08 Jul 2022 16:48:12.484 # User requested shutdown...
+1:M 08 Jul 2022 16:48:12.484 * Calling fsync() on the AOF file.
+1:M 08 Jul 2022 16:48:12.485 * Saving the final RDB snapshot before exiting.
+1:M 08 Jul 2022 16:48:12.489 * DB saved on disk
+1:M 08 Jul 2022 16:48:12.489 * Removing the pid file.
+1:M 08 Jul 2022 16:48:12.489 # Redis is now ready to exit, bye bye...
+1:C 08 Jul 2022 16:48:27.935 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+1:C 08 Jul 2022 16:48:27.935 # Redis version=6.2.6, bits=64, commit=00000000, modified=0, pid=1, just started
+1:C 08 Jul 2022 16:48:27.935 # Configuration loaded
+1:M 08 Jul 2022 16:48:27.936 * monotonic clock: POSIX clock_gettime
+1:M 08 Jul 2022 16:48:27.936 * Node configuration loaded, I'm b1b78c78a396d39bbc0aece94c99bd3c59a22b47
+1:M 08 Jul 2022 16:48:27.937 * Running mode=cluster, port=7001.
+1:M 08 Jul 2022 16:48:27.937 # Server initialized
+1:M 08 Jul 2022 16:48:27.937 * Ready to accept connections
+1:M 08 Jul 2022 16:48:28.481 * Replica 192.168.96.1:7004 asks for synchronization
+1:M 08 Jul 2022 16:48:28.481 * Partial resynchronization not accepted: Replication ID mismatch (Replica asked for '9016daad699e88cbfc2efd7e6a382f160257df7a', my replication IDs are '9bc5a5c28017a537f03fa5804de7de9d57ba3188' and '0000000000000000000000000000000000000000')
+1:M 08 Jul 2022 16:48:28.482 * Replication backlog created, my new replication IDs are '869c407a8af12b1ca6e82076e7654e62009759e8' and '0000000000000000000000000000000000000000'
+1:M 08 Jul 2022 16:48:28.482 * Starting BGSAVE for SYNC with target: disk
+1:M 08 Jul 2022 16:48:28.482 * Background saving started by pid 19
+19:C 08 Jul 2022 16:48:28.487 * DB saved on disk
+19:C 08 Jul 2022 16:48:28.487 * RDB: 0 MB of memory used by copy-on-write
+1:M 08 Jul 2022 16:48:28.541 * Background saving terminated with success
+1:M 08 Jul 2022 16:48:28.542 * Synchronization with replica 192.168.96.1:7004 succeeded
+1:M 08 Jul 2022 16:48:29.946 # Cluster state changed: ok
+1:M 08 Jul 2022 17:15:37.233 * Marking node c4e3cbb8bcf20b502ca88072b5d7a955e8ebad39 as failing (quorum reached).
+1:M 08 Jul 2022 17:17:50.276 * Clear FAIL state for node c4e3cbb8bcf20b502ca88072b5d7a955e8ebad39: replica is reachable again.
+1:M 08 Jul 2022 17:18:08.520 * FAIL message received from 55a08a29d6e99db627bb971846e1536260ef279a about c45e0ad6602cef609fc19b029b5e837baffc3f07
+1:M 08 Jul 2022 17:18:09.226 # Failover auth granted to 55a08a29d6e99db627bb971846e1536260ef279a for epoch 6
+1:M 08 Jul 2022 17:18:28.654 * Clear FAIL state for node c45e0ad6602cef609fc19b029b5e837baffc3f07: master without slots is reachable again.
+1:M 08 Jul 2022 17:23:17.699 # Connection with replica 192.168.96.1:7004 lost.
+1:signal-handler (1657300997) Received SIGTERM scheduling shutdown...
+1:M 08 Jul 2022 17:23:17.967 # User requested shutdown...
+1:M 08 Jul 2022 17:23:17.967 * Calling fsync() on the AOF file.
+1:M 08 Jul 2022 17:23:17.968 * Saving the final RDB snapshot before exiting.
+1:M 08 Jul 2022 17:23:17.972 * DB saved on disk
+1:M 08 Jul 2022 17:23:17.972 * Removing the pid file.
+1:M 08 Jul 2022 17:23:17.972 # Redis is now ready to exit, bye bye...
+1:C 12 Jul 2022 06:54:47.836 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+1:C 12 Jul 2022 06:54:47.837 # Redis version=6.2.6, bits=64, commit=00000000, modified=0, pid=1, just started
+1:C 12 Jul 2022 06:54:47.837 # Configuration loaded
+1:M 12 Jul 2022 06:54:47.838 * monotonic clock: POSIX clock_gettime
+1:M 12 Jul 2022 06:54:47.839 * Node configuration loaded, I'm b1b78c78a396d39bbc0aece94c99bd3c59a22b47
+1:M 12 Jul 2022 06:54:47.839 * Running mode=cluster, port=7001.
+1:M 12 Jul 2022 06:54:47.839 # Server initialized
+1:M 12 Jul 2022 06:54:47.839 # WARNING overcommit_memory is set to 0! Background save may fail under low memory condition. To fix this issue add 'vm.overcommit_memory = 1' to /etc/sysctl.conf and then reboot or run the command 'sysctl vm.overcommit_memory=1' for this to take effect.
+1:M 12 Jul 2022 06:54:47.839 * Ready to accept connections
+1:M 12 Jul 2022 06:54:49.844 # Cluster state changed: ok
+1:M 12 Jul 2022 06:54:55.356 # Cluster state changed: fail

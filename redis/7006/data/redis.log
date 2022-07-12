@@ -1,0 +1,2433 @@
+1:C 08 Jul 2022 07:22:17.908 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+1:C 08 Jul 2022 07:22:17.908 # Redis version=6.2.6, bits=64, commit=00000000, modified=0, pid=1, just started
+1:C 08 Jul 2022 07:22:17.908 # Configuration loaded
+1:M 08 Jul 2022 07:22:17.909 * monotonic clock: POSIX clock_gettime
+1:M 08 Jul 2022 07:22:17.909 * No cluster configuration found, I'm 55a08a29d6e99db627bb971846e1536260ef279a
+1:M 08 Jul 2022 07:22:17.913 * Running mode=cluster, port=7006.
+1:M 08 Jul 2022 07:22:17.913 # Server initialized
+1:M 08 Jul 2022 07:22:17.913 * Ready to accept connections
+1:signal-handler (1657265090) Received SIGTERM scheduling shutdown...
+1:M 08 Jul 2022 07:24:50.173 # User requested shutdown...
+1:M 08 Jul 2022 07:24:50.173 * Calling fsync() on the AOF file.
+1:M 08 Jul 2022 07:24:50.173 * Saving the final RDB snapshot before exiting.
+1:M 08 Jul 2022 07:24:50.177 * DB saved on disk
+1:M 08 Jul 2022 07:24:50.177 * Removing the pid file.
+1:M 08 Jul 2022 07:24:50.177 # Redis is now ready to exit, bye bye...
+1:C 08 Jul 2022 07:31:22.420 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+1:C 08 Jul 2022 07:31:22.420 # Redis version=6.2.6, bits=64, commit=00000000, modified=0, pid=1, just started
+1:C 08 Jul 2022 07:31:22.420 # Configuration loaded
+1:M 08 Jul 2022 07:31:22.420 * monotonic clock: POSIX clock_gettime
+1:M 08 Jul 2022 07:31:22.421 * Node configuration loaded, I'm 55a08a29d6e99db627bb971846e1536260ef279a
+1:M 08 Jul 2022 07:31:22.421 * Running mode=cluster, port=7006.
+1:M 08 Jul 2022 07:31:22.421 # Server initialized
+1:M 08 Jul 2022 07:31:22.421 * Ready to accept connections
+1:S 08 Jul 2022 07:52:22.286 * Before turning into a replica, using my own master parameters to synthesize a cached master: I may be able to synchronize with the new master with just a partial transfer.
+1:S 08 Jul 2022 07:52:22.286 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 07:52:22.286 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 07:52:22.288 * Non blocking connect for SYNC fired the event.
+1:S 08 Jul 2022 07:52:22.293 * Master replied to PING, replication can continue...
+1:S 08 Jul 2022 07:52:22.297 * Trying a partial resynchronization (request 8d124f1ab4c31cde57091442af508ef30969bc96:1).
+1:S 08 Jul 2022 07:52:22.299 * Full resync from master: 86079819570d846c03129a32dc0f13572e19c710:0
+1:S 08 Jul 2022 07:52:22.300 * Discarding previously cached master state.
+1:S 08 Jul 2022 07:52:22.385 * MASTER <-> REPLICA sync: receiving 175 bytes from master to disk
+1:S 08 Jul 2022 07:52:22.385 * MASTER <-> REPLICA sync: Flushing old data
+1:S 08 Jul 2022 07:52:22.385 * MASTER <-> REPLICA sync: Loading DB in memory
+1:S 08 Jul 2022 07:52:22.389 * Loading RDB produced by version 6.2.6
+1:S 08 Jul 2022 07:52:22.389 * RDB age 0 seconds
+1:S 08 Jul 2022 07:52:22.389 * RDB memory usage when created 2.56 Mb
+1:S 08 Jul 2022 07:52:22.389 # Done loading RDB, keys loaded: 0, keys expired: 0.
+1:S 08 Jul 2022 07:52:22.389 * MASTER <-> REPLICA sync: Finished with success
+1:S 08 Jul 2022 07:52:22.390 * Background append only file rewriting started by pid 19
+1:S 08 Jul 2022 07:52:22.417 * AOF rewrite child asks to stop sending diffs.
+19:C 08 Jul 2022 07:52:22.417 * Parent agreed to stop sending diffs. Finalizing AOF...
+19:C 08 Jul 2022 07:52:22.417 * Concatenating 0.00 MB of AOF diff received from parent.
+19:C 08 Jul 2022 07:52:22.418 * SYNC append only file rewrite performed
+19:C 08 Jul 2022 07:52:22.419 * AOF rewrite: 0 MB of memory used by copy-on-write
+1:S 08 Jul 2022 07:52:22.480 * Background AOF rewrite terminated with success
+1:S 08 Jul 2022 07:52:22.480 * Residual parent diff successfully flushed to the rewritten AOF (0.00 MB)
+1:S 08 Jul 2022 07:52:22.481 * Background AOF rewrite finished successfully
+1:S 08 Jul 2022 07:55:02.741 # Cluster state changed: ok
+1:signal-handler (1657294463) Received SIGTERM scheduling shutdown...
+1:S 08 Jul 2022 15:34:23.969 # User requested shutdown...
+1:S 08 Jul 2022 15:34:23.969 * Calling fsync() on the AOF file.
+1:S 08 Jul 2022 15:34:23.970 * Saving the final RDB snapshot before exiting.
+1:S 08 Jul 2022 15:34:23.981 * DB saved on disk
+1:S 08 Jul 2022 15:34:23.981 * Removing the pid file.
+1:S 08 Jul 2022 15:34:23.981 # Redis is now ready to exit, bye bye...
+1:C 08 Jul 2022 15:34:44.781 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+1:C 08 Jul 2022 15:34:44.781 # Redis version=6.2.6, bits=64, commit=00000000, modified=0, pid=1, just started
+1:C 08 Jul 2022 15:34:44.781 # Configuration loaded
+1:M 08 Jul 2022 15:34:44.782 * monotonic clock: POSIX clock_gettime
+1:M 08 Jul 2022 15:34:44.782 * Node configuration loaded, I'm 55a08a29d6e99db627bb971846e1536260ef279a
+1:M 08 Jul 2022 15:34:44.782 * Running mode=cluster, port=7006.
+1:M 08 Jul 2022 15:34:44.782 # Server initialized
+1:M 08 Jul 2022 15:34:44.783 * Reading RDB preamble from AOF file...
+1:M 08 Jul 2022 15:34:44.783 * Loading RDB produced by version 6.2.6
+1:M 08 Jul 2022 15:34:44.783 * RDB age 27742 seconds
+1:M 08 Jul 2022 15:34:44.783 * RDB memory usage when created 2.50 Mb
+1:M 08 Jul 2022 15:34:44.783 * RDB has an AOF tail
+1:M 08 Jul 2022 15:34:44.783 # Done loading RDB, keys loaded: 0, keys expired: 0.
+1:M 08 Jul 2022 15:34:44.783 * Reading the remaining AOF tail...
+1:M 08 Jul 2022 15:34:44.783 * DB loaded from append only file: 0.000 seconds
+1:M 08 Jul 2022 15:34:44.783 * Ready to accept connections
+1:S 08 Jul 2022 15:34:44.783 * Before turning into a replica, using my own master parameters to synthesize a cached master: I may be able to synchronize with the new master with just a partial transfer.
+1:S 08 Jul 2022 15:34:44.783 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 15:34:44.783 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 15:34:44.783 # Cluster state changed: ok
+1:S 08 Jul 2022 15:34:45.803 * Non blocking connect for SYNC fired the event.
+1:S 08 Jul 2022 15:34:45.805 * Master replied to PING, replication can continue...
+1:S 08 Jul 2022 15:34:45.807 * Trying a partial resynchronization (request acbb8b7a21214f3f5087ee02713f3bfe66075ffc:1).
+1:S 08 Jul 2022 15:34:45.809 * Full resync from master: 127e3406403e83d1570ab322b6b6f64203653425:0
+1:S 08 Jul 2022 15:34:45.809 * Discarding previously cached master state.
+1:S 08 Jul 2022 15:34:45.876 * MASTER <-> REPLICA sync: receiving 175 bytes from master to disk
+1:S 08 Jul 2022 15:34:45.876 * MASTER <-> REPLICA sync: Flushing old data
+1:S 08 Jul 2022 15:34:45.876 * MASTER <-> REPLICA sync: Loading DB in memory
+1:S 08 Jul 2022 15:34:45.881 * Loading RDB produced by version 6.2.6
+1:S 08 Jul 2022 15:34:45.881 * RDB age 0 seconds
+1:S 08 Jul 2022 15:34:45.881 * RDB memory usage when created 2.54 Mb
+1:S 08 Jul 2022 15:34:45.881 # Done loading RDB, keys loaded: 0, keys expired: 0.
+1:S 08 Jul 2022 15:34:45.881 * MASTER <-> REPLICA sync: Finished with success
+1:S 08 Jul 2022 15:34:45.881 * Background append only file rewriting started by pid 19
+1:S 08 Jul 2022 15:34:45.907 * AOF rewrite child asks to stop sending diffs.
+19:C 08 Jul 2022 15:34:45.907 * Parent agreed to stop sending diffs. Finalizing AOF...
+19:C 08 Jul 2022 15:34:45.908 * Concatenating 0.00 MB of AOF diff received from parent.
+19:C 08 Jul 2022 15:34:45.908 * SYNC append only file rewrite performed
+19:C 08 Jul 2022 15:34:45.908 * AOF rewrite: 0 MB of memory used by copy-on-write
+1:S 08 Jul 2022 15:34:45.988 * Background AOF rewrite terminated with success
+1:S 08 Jul 2022 15:34:45.988 * Residual parent diff successfully flushed to the rewritten AOF (0.00 MB)
+1:S 08 Jul 2022 15:34:45.988 * Background AOF rewrite finished successfully
+1:signal-handler (1657294747) Received SIGTERM scheduling shutdown...
+1:S 08 Jul 2022 15:39:07.117 # User requested shutdown...
+1:S 08 Jul 2022 15:39:07.117 * Calling fsync() on the AOF file.
+1:S 08 Jul 2022 15:39:07.117 * Saving the final RDB snapshot before exiting.
+1:S 08 Jul 2022 15:39:07.122 * DB saved on disk
+1:S 08 Jul 2022 15:39:07.122 * Removing the pid file.
+1:S 08 Jul 2022 15:39:07.122 # Redis is now ready to exit, bye bye...
+1:C 08 Jul 2022 15:39:49.443 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+1:C 08 Jul 2022 15:39:49.443 # Redis version=6.2.6, bits=64, commit=00000000, modified=0, pid=1, just started
+1:C 08 Jul 2022 15:39:49.443 # Configuration loaded
+1:M 08 Jul 2022 15:39:49.444 * monotonic clock: POSIX clock_gettime
+1:M 08 Jul 2022 15:39:49.444 * Node configuration loaded, I'm 55a08a29d6e99db627bb971846e1536260ef279a
+1:M 08 Jul 2022 15:39:49.444 * Running mode=cluster, port=7006.
+1:M 08 Jul 2022 15:39:49.444 # Server initialized
+1:M 08 Jul 2022 15:39:49.445 * Reading RDB preamble from AOF file...
+1:M 08 Jul 2022 15:39:49.445 * Loading RDB produced by version 6.2.6
+1:M 08 Jul 2022 15:39:49.445 * RDB age 304 seconds
+1:M 08 Jul 2022 15:39:49.445 * RDB memory usage when created 2.50 Mb
+1:M 08 Jul 2022 15:39:49.445 * RDB has an AOF tail
+1:M 08 Jul 2022 15:39:49.445 # Done loading RDB, keys loaded: 0, keys expired: 0.
+1:M 08 Jul 2022 15:39:49.445 * Reading the remaining AOF tail...
+1:M 08 Jul 2022 15:39:49.445 * DB loaded from append only file: 0.000 seconds
+1:M 08 Jul 2022 15:39:49.445 * Ready to accept connections
+1:S 08 Jul 2022 15:39:49.445 * Before turning into a replica, using my own master parameters to synthesize a cached master: I may be able to synchronize with the new master with just a partial transfer.
+1:S 08 Jul 2022 15:39:49.445 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 15:39:49.445 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 15:39:49.445 # Cluster state changed: ok
+1:S 08 Jul 2022 15:39:52.557 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 15:39:53.455 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 15:39:53.455 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 15:39:55.677 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 15:39:56.462 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 15:39:56.462 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 15:39:56.963 # Cluster state changed: fail
+1:S 08 Jul 2022 15:39:58.787 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 15:39:59.470 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 15:39:59.470 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 15:40:01.917 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 15:40:02.477 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 15:40:02.478 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 15:40:05.037 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 15:40:05.487 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 15:40:05.487 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 15:40:08.157 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 15:40:08.495 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 15:40:08.495 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 15:40:11.277 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 15:40:11.503 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 15:40:11.503 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 15:40:14.397 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 15:40:14.510 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 15:40:14.510 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 15:40:17.517 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 15:40:17.518 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 15:40:17.518 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 15:40:20.637 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 15:40:21.528 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 15:40:21.528 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 15:40:23.747 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 15:40:24.536 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 15:40:24.536 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 15:40:26.867 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 15:40:27.544 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 15:40:27.544 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 15:40:29.987 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 15:40:30.551 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 15:40:30.552 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 15:40:33.107 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 15:40:33.559 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 15:40:33.559 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 15:40:36.227 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 15:40:36.567 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 15:40:36.567 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 15:40:39.347 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 15:40:39.575 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 15:40:39.575 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 15:40:42.467 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 15:40:42.583 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 15:40:42.583 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 15:40:45.587 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 15:40:45.591 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 15:40:45.591 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 15:40:48.717 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 15:40:49.601 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 15:40:49.601 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 15:40:51.837 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 15:40:52.609 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 15:40:52.609 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 15:40:54.947 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 15:40:55.617 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 15:40:55.617 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 15:40:58.067 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 15:40:58.625 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 15:40:58.625 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 15:41:01.197 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 15:41:01.632 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 15:41:01.632 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 15:41:04.307 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 15:41:04.641 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 15:41:04.641 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 15:41:07.437 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 15:41:07.648 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 15:41:07.648 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 15:41:10.547 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 15:41:10.656 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 15:41:10.656 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 15:41:13.677 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 15:41:14.666 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 15:41:14.666 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 15:41:16.787 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 15:41:17.673 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 15:41:17.673 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 15:41:19.907 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 15:41:20.681 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 15:41:20.681 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 15:41:23.037 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 15:41:23.689 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 15:41:23.689 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 15:41:26.147 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 15:41:26.696 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 15:41:26.696 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 15:41:29.267 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 15:41:29.704 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 15:41:29.704 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 15:41:32.397 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 15:41:32.712 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 15:41:32.712 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 15:41:35.507 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 15:41:35.720 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 15:41:35.720 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 15:41:38.637 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 15:41:38.727 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 15:41:38.727 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 15:41:41.757 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 15:41:42.737 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 15:41:42.737 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 15:41:44.867 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 15:41:45.745 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 15:41:45.746 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 15:41:47.987 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 15:41:48.753 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 15:41:48.753 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 15:41:51.107 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 15:41:51.761 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 15:41:51.761 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 15:41:54.237 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 15:41:54.768 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 15:41:54.769 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 15:41:57.347 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 15:41:57.776 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 15:41:57.776 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 15:42:00.467 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 15:42:00.784 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 15:42:00.784 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 15:42:03.587 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 15:42:03.791 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 15:42:03.791 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 15:42:06.707 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 15:42:06.798 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 15:42:06.798 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 15:42:09.837 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 15:42:10.808 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 15:42:10.808 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 15:42:12.947 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 15:42:13.816 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 15:42:13.817 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 15:42:16.067 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 15:42:16.824 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 15:42:16.824 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 15:42:19.197 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 15:42:19.832 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 15:42:19.832 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 15:42:22.307 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 15:42:22.839 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 15:42:22.839 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 15:42:25.427 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 15:42:25.847 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 15:42:25.847 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 15:42:28.557 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 15:42:28.855 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 15:42:28.855 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 15:42:31.667 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 15:42:31.863 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 15:42:31.863 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 15:42:34.797 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 15:42:34.870 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 15:42:34.870 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 15:42:37.917 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 15:42:38.880 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 15:42:38.880 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 15:42:41.027 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 15:42:41.888 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 15:42:41.888 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 15:42:44.147 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 15:42:44.896 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 15:42:44.896 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 15:42:47.277 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 15:42:47.904 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 15:42:47.904 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 15:42:50.387 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 15:42:50.912 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 15:42:50.912 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 15:42:53.507 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 15:42:53.919 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 15:42:53.920 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 15:42:56.627 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 15:42:56.928 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 15:42:56.928 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 15:42:59.747 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 15:42:59.936 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 15:42:59.936 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 15:43:02.867 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 15:43:02.944 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 15:43:02.944 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 15:43:05.997 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 15:43:06.955 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 15:43:06.955 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 15:43:09.107 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 15:43:09.962 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 15:43:09.962 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 15:43:12.227 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 15:43:12.970 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 15:43:12.970 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 15:43:15.357 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 15:43:15.979 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 15:43:15.979 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 15:43:18.477 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 15:43:18.986 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 15:43:18.987 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 15:43:21.587 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 15:43:21.993 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 15:43:21.993 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 15:43:24.707 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 15:43:25.001 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 15:43:25.001 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 15:43:27.827 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 15:43:28.009 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 15:43:28.009 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 15:43:30.957 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 15:43:31.016 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 15:43:31.016 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 15:43:34.067 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 15:43:35.026 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 15:43:35.026 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 15:43:37.187 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 15:43:38.034 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 15:43:38.035 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 15:43:40.307 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 15:43:41.042 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 15:43:41.042 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 15:43:43.437 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 15:43:44.050 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 15:43:44.050 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 15:43:46.557 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 15:43:47.058 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 15:43:47.058 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 15:43:49.667 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 15:43:50.066 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 15:43:50.066 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 15:43:52.787 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 15:43:53.074 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 15:43:53.074 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 15:43:55.907 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 15:43:56.082 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 15:43:56.082 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 15:43:59.027 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 15:43:59.089 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 15:43:59.089 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 15:44:02.157 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 15:44:03.099 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 15:44:03.099 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 15:44:05.267 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 15:44:06.107 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 15:44:06.107 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 15:44:08.397 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 15:44:09.115 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 15:44:09.115 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 15:44:11.517 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 15:44:12.123 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 15:44:12.123 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 15:44:14.637 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 15:44:15.130 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 15:44:15.130 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 15:44:17.757 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 15:44:18.138 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 15:44:18.138 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 15:44:20.867 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 15:44:21.146 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 15:44:21.146 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 15:44:23.987 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 15:44:24.154 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 15:44:24.154 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 15:44:27.107 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 15:44:27.161 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 15:44:27.161 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 15:44:30.227 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 15:44:31.170 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 15:44:31.170 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 15:44:33.357 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 15:44:34.178 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 15:44:34.178 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 15:44:36.477 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 15:44:37.186 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 15:44:37.186 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 15:44:39.587 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 15:44:40.194 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 15:44:40.194 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 15:44:42.707 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 15:44:43.201 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 15:44:43.202 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 15:44:45.837 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 15:44:46.209 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 15:44:46.209 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 15:44:48.947 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 15:44:49.217 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 15:44:49.217 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 15:44:52.077 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 15:44:52.225 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 15:44:52.225 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 15:44:55.187 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 15:44:55.232 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 15:44:55.232 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 15:44:58.307 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 15:44:59.242 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 15:44:59.242 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 15:45:01.427 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 15:45:02.250 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 15:45:02.250 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 15:45:04.557 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 15:45:05.258 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 15:45:05.258 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 15:45:07.667 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 15:45:08.265 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 15:45:08.265 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 15:45:10.797 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 15:45:11.272 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 15:45:11.272 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 15:45:13.907 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 15:45:14.280 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 15:45:14.280 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 15:45:17.027 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 15:45:17.288 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 15:45:17.288 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 15:45:20.157 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 15:45:20.296 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 15:45:20.296 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 15:45:23.267 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 15:45:23.303 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 15:45:23.303 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 15:45:26.397 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 15:45:27.313 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 15:45:27.314 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 15:45:29.517 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 15:45:30.321 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 15:45:30.321 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 15:45:32.637 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 15:45:33.329 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 15:45:33.329 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 15:45:35.757 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 15:45:36.337 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 15:45:36.337 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 15:45:38.867 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 15:45:39.345 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 15:45:39.345 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 15:45:41.987 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 15:45:42.353 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 15:45:42.353 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 15:45:45.107 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 15:45:45.361 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 15:45:45.361 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 15:45:48.227 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 15:45:48.369 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 15:45:48.369 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 15:45:51.347 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 15:45:51.376 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 15:45:51.376 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 15:45:54.467 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 15:45:55.387 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 15:45:55.387 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 15:45:57.597 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 15:45:58.394 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 15:45:58.394 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 15:46:00.717 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 15:46:01.402 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 15:46:01.402 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 15:46:03.827 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 15:46:04.408 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 15:46:04.408 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 15:46:06.947 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 15:46:07.416 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 15:46:07.416 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 15:46:10.067 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 15:46:10.424 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 15:46:10.424 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 15:46:13.187 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 15:46:13.432 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 15:46:13.432 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 15:46:16.317 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 15:46:16.439 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 15:46:16.439 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 15:46:19.427 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 15:46:19.447 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 15:46:19.447 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 15:46:22.557 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 15:46:23.457 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 15:46:23.457 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 15:46:25.667 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 15:46:26.465 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 15:46:26.465 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 15:46:28.787 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 15:46:29.473 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 15:46:29.473 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 15:46:31.917 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 15:46:32.480 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 15:46:32.480 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 15:46:35.027 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 15:46:35.488 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 15:46:35.488 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 15:46:38.157 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 15:46:38.496 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 15:46:38.496 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 15:46:41.277 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 15:46:41.504 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 15:46:41.504 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 15:46:44.387 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 15:46:44.511 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 15:46:44.511 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 15:46:47.518 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 15:46:47.519 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 15:46:47.519 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 15:46:50.637 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 15:46:51.529 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 15:46:51.529 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 15:46:53.747 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 15:46:54.537 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 15:46:54.537 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 15:46:56.867 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 15:46:57.545 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 15:46:57.545 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 15:46:59.997 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 15:47:00.551 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 15:47:00.551 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 15:47:03.117 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 15:47:03.559 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 15:47:03.559 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 15:47:06.227 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 15:47:06.567 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 15:47:06.567 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 15:47:09.347 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 15:47:09.575 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 15:47:09.575 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 15:47:12.467 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 15:47:12.582 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 15:47:12.583 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 15:47:15.597 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 15:47:16.592 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 15:47:16.592 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 15:47:18.707 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 15:47:19.599 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 15:47:19.599 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 15:47:21.837 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 15:47:22.607 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 15:47:22.607 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 15:47:24.957 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 15:47:25.614 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 15:47:25.614 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 15:47:28.067 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 15:47:28.621 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 15:47:28.621 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 15:47:31.197 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 15:47:31.629 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 15:47:31.629 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 15:47:34.317 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 15:47:34.637 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 15:47:34.637 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 15:47:37.437 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 15:47:37.645 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 15:47:37.645 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 15:47:40.547 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 15:47:40.651 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 15:47:40.651 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 15:47:43.667 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 15:47:44.661 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 15:47:44.661 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 15:47:46.787 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 15:47:47.670 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 15:47:47.670 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 15:47:49.907 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 15:47:50.677 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 15:47:50.677 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 15:47:53.027 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 15:47:53.685 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 15:47:53.685 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 15:47:56.147 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 15:47:56.691 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 15:47:56.692 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 15:47:59.267 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 15:47:59.699 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 15:47:59.699 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 15:48:02.397 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 15:48:02.706 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 15:48:02.706 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 15:48:05.507 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 15:48:05.714 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 15:48:05.714 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 15:48:08.627 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 15:48:08.721 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 15:48:08.721 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 15:48:11.747 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 15:48:12.731 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 15:48:12.731 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 15:48:14.867 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 15:48:15.739 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 15:48:15.739 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 15:48:17.987 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 15:48:18.747 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 15:48:18.747 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 15:48:21.117 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 15:48:21.755 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 15:48:21.755 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 15:48:24.237 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 15:48:24.762 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 15:48:24.763 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 15:48:27.357 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 15:48:27.770 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 15:48:27.770 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 15:48:30.467 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 15:48:30.777 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 15:48:30.777 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 15:48:33.587 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 15:48:33.783 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 15:48:33.783 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 15:48:36.707 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 15:48:36.791 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 15:48:36.791 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 15:48:39.827 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 15:48:40.801 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 15:48:40.801 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 15:48:42.947 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 15:48:43.809 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 15:48:43.809 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 15:48:46.067 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 15:48:46.817 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 15:48:46.817 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 15:48:49.187 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 15:48:49.824 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 15:48:49.825 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 15:48:52.307 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 15:48:52.831 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 15:48:52.831 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 15:48:55.427 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 15:48:55.838 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 15:48:55.838 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 15:48:58.547 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 15:48:58.846 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 15:48:58.846 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 15:49:01.677 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 15:49:01.854 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 15:49:01.854 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 15:49:04.797 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 15:49:04.861 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 15:49:04.861 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 15:49:07.907 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 15:49:08.871 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 15:49:08.871 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 15:49:11.027 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 15:49:11.879 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 15:49:11.879 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 15:49:14.147 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 15:49:14.887 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 15:49:14.887 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 15:49:17.267 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 15:49:17.894 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 15:49:17.895 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 15:49:20.387 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 15:49:20.902 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 15:49:20.902 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 15:49:23.517 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 15:49:23.910 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 15:49:23.910 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 15:49:26.627 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 15:49:26.918 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 15:49:26.918 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 15:49:29.757 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 15:49:29.924 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 15:49:29.925 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 15:49:32.867 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 15:49:32.932 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 15:49:32.932 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 15:49:35.987 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 15:49:36.942 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 15:49:36.942 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 15:49:39.117 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 15:49:39.950 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 15:49:39.950 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 15:49:42.227 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 15:49:42.957 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 15:49:42.957 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 15:49:45.347 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 15:49:45.965 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 15:49:45.965 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 15:49:48.477 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 15:49:48.972 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 15:49:48.972 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 15:49:51.597 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 15:49:51.980 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 15:49:51.980 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 15:49:54.717 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 15:49:54.988 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 15:49:54.988 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 15:49:57.827 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 15:49:57.996 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 15:49:57.996 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 15:50:00.957 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 15:50:01.003 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 15:50:01.003 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 15:50:04.077 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 15:50:05.013 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 15:50:05.013 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 15:50:07.197 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 15:50:08.021 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 15:50:08.022 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 15:50:10.307 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 15:50:11.029 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 15:50:11.029 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 15:50:13.427 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 15:50:14.037 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 15:50:14.037 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 15:50:16.547 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 15:50:17.044 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 15:50:17.044 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 15:50:19.667 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 15:50:20.050 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 15:50:20.051 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 15:50:22.787 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 15:50:23.058 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 15:50:23.058 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 15:50:25.917 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 15:50:26.066 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 15:50:26.066 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 15:50:29.027 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 15:50:29.074 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 15:50:29.074 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 15:50:32.147 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 15:50:33.083 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 15:50:33.083 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 15:50:35.277 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 15:50:36.091 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 15:50:36.091 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 15:50:38.387 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 15:50:39.098 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 15:50:39.098 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 15:50:41.507 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 15:50:42.105 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 15:50:42.105 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 15:50:44.627 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 15:50:45.113 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 15:50:45.113 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 15:50:47.747 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 15:50:48.121 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 15:50:48.121 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 15:50:50.867 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 15:50:51.129 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 15:50:51.129 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 15:50:53.987 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 15:50:54.137 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 15:50:54.137 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 15:50:57.117 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 15:50:57.144 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 15:50:57.144 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 15:51:00.237 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 15:51:01.155 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 15:51:01.155 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 15:51:03.357 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 15:51:04.162 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 15:51:04.162 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 15:51:06.467 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 15:51:07.170 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 15:51:07.170 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 15:51:09.587 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 15:51:10.177 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 15:51:10.178 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 15:51:12.717 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 15:51:13.185 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 15:51:13.185 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 15:51:15.827 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 15:51:16.193 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 15:51:16.193 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 15:51:18.947 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 15:51:19.201 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 15:51:19.201 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 15:51:22.067 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 15:51:22.209 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 15:51:22.209 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 15:51:25.197 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 15:51:25.216 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 15:51:25.216 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 15:51:28.317 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 15:51:29.227 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 15:51:29.227 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 15:51:31.427 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 15:51:32.235 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 15:51:32.235 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 15:51:34.557 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 15:51:35.243 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 15:51:35.243 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 15:51:37.667 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 15:51:38.251 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 15:51:38.251 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 15:51:40.797 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 15:51:41.258 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 15:51:41.258 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 15:51:43.917 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 15:51:44.266 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 15:51:44.266 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 15:51:47.037 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 15:51:47.274 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 15:51:47.274 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 15:51:50.157 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 15:51:50.281 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 15:51:50.282 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 15:51:53.277 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 15:51:53.288 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 15:51:53.288 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 15:51:56.387 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 15:51:57.298 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 15:51:57.298 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 15:51:59.507 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 15:52:00.305 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 15:52:00.305 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 15:52:02.627 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 15:52:03.312 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 15:52:03.312 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 15:52:05.747 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 15:52:06.319 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 15:52:06.319 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 15:52:08.867 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 15:52:09.327 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 15:52:09.327 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 15:52:11.987 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 15:52:12.334 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 15:52:12.334 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 15:52:15.117 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 15:52:15.341 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 15:52:15.341 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 15:52:18.227 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 15:52:18.347 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 15:52:18.348 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 15:52:21.357 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 15:52:22.357 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 15:52:22.357 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 15:52:24.467 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 15:52:25.365 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 15:52:25.365 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 15:52:27.587 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 15:52:28.373 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 15:52:28.373 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 15:52:30.717 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 15:52:31.380 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 15:52:31.381 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 15:52:33.837 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 15:52:34.387 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 15:52:34.387 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 15:52:36.947 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 15:52:37.395 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 15:52:37.395 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 15:52:40.067 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 15:52:40.402 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 15:52:40.402 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 15:52:43.197 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 15:52:43.410 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 15:52:43.410 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 15:52:46.307 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 15:52:46.417 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 15:52:46.417 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 15:52:49.427 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 15:52:50.426 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 15:52:50.427 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 15:52:52.547 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 15:52:53.434 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 15:52:53.434 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 15:52:55.667 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 15:52:56.442 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 15:52:56.442 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 15:52:58.787 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 15:52:59.450 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 15:52:59.450 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 15:53:01.907 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 15:53:02.458 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 15:53:02.458 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 15:53:05.037 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 15:53:05.465 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 15:53:05.465 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 15:53:08.157 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 15:53:08.472 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 15:53:08.472 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 15:53:11.267 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 15:53:11.480 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 15:53:11.480 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 15:53:14.387 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 15:53:14.487 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 15:53:14.488 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 15:53:17.517 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 15:53:18.497 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 15:53:18.497 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 15:53:20.627 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 15:53:21.504 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 15:53:21.504 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 15:53:23.757 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 15:53:24.512 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 15:53:24.512 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 15:53:26.867 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 15:53:27.519 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 15:53:27.519 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 15:53:29.987 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 15:53:30.526 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 15:53:30.527 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 15:53:33.107 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 15:53:33.533 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 15:53:33.533 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 15:53:36.227 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 15:53:36.541 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 15:53:36.541 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 15:53:39.347 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 15:53:39.549 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 15:53:39.549 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 15:53:42.467 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 15:53:42.556 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 15:53:42.556 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 15:53:45.587 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 15:53:46.566 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 15:53:46.566 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 15:53:48.707 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 15:53:49.573 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 15:53:49.574 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 15:53:51.837 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 15:53:52.581 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 15:53:52.581 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 15:53:54.947 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 15:53:55.589 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 15:53:55.589 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 15:53:58.067 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 15:53:58.597 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 15:53:58.597 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 15:54:01.187 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 15:54:01.604 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 15:54:01.604 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 15:54:04.317 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 15:54:04.612 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 15:54:04.612 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 15:54:07.437 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 15:54:07.619 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 15:54:07.620 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 15:54:10.547 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 15:54:10.628 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 15:54:10.628 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 15:54:13.667 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 15:54:14.639 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 15:54:14.639 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 15:54:16.787 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 15:54:17.646 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 15:54:17.646 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 15:54:19.917 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 15:54:20.654 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 15:54:20.654 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 15:54:23.027 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 15:54:23.662 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 15:54:23.662 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 15:54:26.157 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 15:54:26.669 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 15:54:26.670 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 15:54:29.267 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 15:54:29.677 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 15:54:29.677 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 15:54:32.387 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 15:54:32.685 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 15:54:32.685 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 15:54:35.507 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 15:54:35.693 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 15:54:35.693 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 15:54:38.627 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 15:54:38.700 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 15:54:38.700 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 15:54:41.747 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 15:54:42.710 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 15:54:42.710 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 15:54:44.867 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 15:54:45.717 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 15:54:45.717 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 15:54:47.997 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 15:54:48.725 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 15:54:48.725 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 15:54:51.107 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 15:54:51.732 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 15:54:51.733 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 15:54:54.237 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 15:54:54.740 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 15:54:54.740 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 15:54:57.357 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 15:54:57.747 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 15:54:57.747 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 15:55:00.477 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 15:55:00.755 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 15:55:00.755 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 15:55:03.587 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 15:55:03.762 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 15:55:03.763 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 15:55:06.717 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 15:55:06.769 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 15:55:06.769 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 15:55:09.827 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 15:55:10.778 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 15:55:10.779 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 15:55:12.947 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 15:55:13.786 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 15:55:13.786 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 15:55:16.067 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 15:55:16.794 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 15:55:16.794 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 15:55:19.197 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 15:55:19.801 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 15:55:19.801 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 15:55:22.307 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 15:55:22.808 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 15:55:22.808 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 15:55:25.437 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 15:55:25.816 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 15:55:25.816 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 15:55:28.557 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 15:55:28.823 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 15:55:28.823 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 15:55:31.667 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 15:55:31.831 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 15:55:31.831 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 15:55:34.787 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 15:55:34.838 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 15:55:34.838 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 15:55:37.907 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 15:55:38.848 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 15:55:38.848 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 15:55:41.027 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 15:55:41.855 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 15:55:41.855 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 15:55:44.147 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 15:55:44.863 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 15:55:44.863 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 15:55:47.277 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 15:55:47.869 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 15:55:47.869 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 15:55:50.387 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 15:55:50.877 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 15:55:50.877 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 15:55:53.517 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 15:55:53.885 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 15:55:53.885 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 15:55:56.637 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 15:55:56.892 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 15:55:56.893 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 15:55:59.757 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 15:55:59.900 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 15:55:59.900 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 15:56:02.867 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 15:56:02.908 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 15:56:02.908 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 15:56:05.997 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 15:56:06.917 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 15:56:06.917 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 15:56:09.107 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 15:56:09.925 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 15:56:09.925 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 15:56:12.227 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 15:56:12.932 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 15:56:12.932 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 15:56:15.347 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 15:56:15.940 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 15:56:15.940 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 15:56:18.477 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 15:56:18.948 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 15:56:18.948 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 15:56:21.597 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 15:56:21.955 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 15:56:21.955 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 15:56:24.717 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 15:56:24.962 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 15:56:24.962 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 15:56:27.827 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 15:56:27.969 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 15:56:27.969 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 15:56:30.957 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 15:56:30.976 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 15:56:30.976 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 15:56:34.067 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 15:56:34.985 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 15:56:34.985 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 15:56:37.187 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 15:56:37.992 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 15:56:37.992 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 15:56:40.307 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 15:56:40.998 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 15:56:40.998 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 15:56:43.437 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 15:56:44.005 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 15:56:44.005 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 15:56:46.557 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 15:56:47.012 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 15:56:47.012 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 15:56:49.667 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 15:56:50.019 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 15:56:50.019 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 15:56:52.787 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 15:56:53.026 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 15:56:53.026 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 15:56:55.907 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 15:56:56.032 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 15:56:56.033 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 15:56:59.037 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 15:56:59.040 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 15:56:59.040 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 15:57:02.147 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 15:57:03.051 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 15:57:03.051 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 15:57:05.267 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 15:57:06.058 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 15:57:06.058 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 15:57:08.397 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 15:57:09.066 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 15:57:09.066 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 15:57:11.517 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 15:57:12.073 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 15:57:12.073 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 15:57:14.627 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 15:57:15.081 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 15:57:15.081 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 15:57:17.747 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 15:57:18.088 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 15:57:18.088 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 15:57:20.867 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 15:57:21.096 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 15:57:21.096 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 15:57:23.987 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 15:57:24.103 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 15:57:24.103 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 15:57:27.107 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 15:57:27.110 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 15:57:27.110 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 15:57:30.237 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 15:57:31.121 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 15:57:31.121 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 15:57:33.347 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 15:57:34.129 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 15:57:34.129 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 15:57:36.467 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 15:57:37.137 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 15:57:37.137 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 15:57:39.587 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 15:57:40.144 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 15:57:40.145 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 15:57:42.717 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 15:57:43.152 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 15:57:43.152 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 15:57:45.827 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 15:57:46.160 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 15:57:46.160 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 15:57:48.947 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 15:57:49.168 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 15:57:49.168 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 15:57:52.067 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 15:57:52.174 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 15:57:52.174 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 15:57:55.187 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 15:57:56.185 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 15:57:56.185 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 15:57:58.317 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 15:57:59.193 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 15:57:59.193 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 15:58:01.427 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 15:58:02.201 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 15:58:02.201 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 15:58:04.547 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 15:58:05.209 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 15:58:05.209 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 15:58:07.667 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 15:58:08.215 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 15:58:08.215 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 15:58:10.787 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 15:58:11.223 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 15:58:11.223 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 15:58:13.917 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 15:58:14.231 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 15:58:14.231 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 15:58:17.037 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 15:58:17.237 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 15:58:17.238 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 15:58:20.157 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 15:58:20.245 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 15:58:20.245 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 15:58:23.267 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 15:58:24.255 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 15:58:24.255 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 15:58:26.397 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 15:58:27.262 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 15:58:27.262 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 15:58:29.517 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 15:58:30.269 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 15:58:30.269 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 15:58:32.627 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 15:58:33.277 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 15:58:33.277 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 15:58:35.747 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 15:58:36.284 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 15:58:36.285 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 15:58:38.877 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 15:58:39.292 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 15:58:39.292 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 15:58:41.997 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 15:58:42.299 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 15:58:42.299 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 15:58:45.117 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 15:58:45.306 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 15:58:45.307 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 15:58:48.227 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 15:58:48.313 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 15:58:48.313 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 15:58:51.357 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 15:58:52.322 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 15:58:52.322 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 15:58:54.467 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 15:58:55.330 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 15:58:55.330 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 15:58:57.587 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 15:58:58.338 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 15:58:58.338 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 15:59:00.707 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 15:59:01.346 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 15:59:01.346 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 15:59:03.837 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 15:59:04.353 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 15:59:04.354 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 15:59:06.947 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 15:59:07.361 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 15:59:07.361 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 15:59:10.077 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 15:59:10.369 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 15:59:10.369 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 15:59:13.187 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 15:59:13.376 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 15:59:13.376 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 15:59:16.307 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 15:59:16.382 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 15:59:16.382 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 15:59:19.437 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 15:59:20.391 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 15:59:20.391 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 15:59:22.547 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 15:59:23.399 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 15:59:23.399 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 15:59:25.667 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 15:59:26.407 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 15:59:26.407 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 15:59:28.787 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 15:59:29.414 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 15:59:29.415 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 15:59:31.907 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 15:59:32.421 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 15:59:32.422 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 15:59:35.027 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 15:59:35.429 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 15:59:35.429 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 15:59:38.147 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 15:59:38.437 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 15:59:38.437 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 15:59:41.277 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 15:59:41.444 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 15:59:41.444 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 15:59:44.397 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 15:59:44.452 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 15:59:44.452 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 15:59:47.507 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 15:59:48.462 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 15:59:48.462 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 15:59:50.627 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 15:59:51.469 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 15:59:51.469 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 15:59:53.747 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 15:59:54.476 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 15:59:54.476 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 15:59:56.867 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 15:59:57.482 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 15:59:57.482 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 15:59:59.987 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 16:00:00.489 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 16:00:00.489 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 16:00:03.107 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 16:00:03.496 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 16:00:03.496 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 16:00:06.227 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 16:00:06.503 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 16:00:06.503 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 16:00:09.347 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 16:00:09.510 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 16:00:09.511 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 16:00:12.477 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 16:00:12.517 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 16:00:12.517 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 16:00:15.587 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 16:00:16.526 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 16:00:16.526 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 16:00:18.717 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 16:00:19.533 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 16:00:19.533 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 16:00:21.827 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 16:00:22.540 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 16:00:22.540 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 16:00:24.947 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 16:00:25.547 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 16:00:25.547 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 16:00:28.067 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 16:00:28.554 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 16:00:28.554 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 16:00:31.187 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 16:00:31.562 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 16:00:31.562 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 16:00:34.307 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 16:00:34.570 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 16:00:34.570 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 16:00:37.437 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 16:00:37.578 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 16:00:37.578 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 16:00:40.547 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 16:00:40.585 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 16:00:40.585 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 16:00:43.677 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 16:00:44.594 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 16:00:44.594 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 16:00:46.797 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 16:00:47.601 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 16:00:47.601 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 16:00:49.917 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 16:00:50.609 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 16:00:50.609 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 16:00:53.027 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 16:00:53.616 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 16:00:53.616 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 16:00:56.157 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 16:00:56.624 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 16:00:56.624 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 16:00:59.267 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 16:00:59.632 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 16:00:59.632 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 16:01:02.387 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 16:01:02.640 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 16:01:02.640 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 16:01:05.507 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 16:01:05.648 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 16:01:05.648 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 16:01:08.627 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 16:01:08.655 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 16:01:08.655 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 16:01:11.747 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 16:01:12.666 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 16:01:12.666 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 16:01:14.867 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 16:01:15.673 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 16:01:15.673 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 16:01:17.987 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 16:01:18.680 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 16:01:18.680 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 16:01:21.107 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 16:01:21.687 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 16:01:21.687 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 16:01:24.237 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 16:01:24.695 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 16:01:24.695 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 16:01:27.347 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 16:01:27.703 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 16:01:27.703 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 16:01:30.467 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 16:01:30.711 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 16:01:30.711 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 16:01:33.587 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 16:01:33.719 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 16:01:33.719 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 16:01:36.707 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 16:01:36.726 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 16:01:36.726 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 16:01:39.837 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 16:01:40.735 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 16:01:40.735 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 16:01:42.947 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 16:01:43.743 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 16:01:43.743 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 16:01:46.077 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 16:01:46.750 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 16:01:46.750 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 16:01:49.187 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 16:01:49.759 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 16:01:49.759 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 16:01:52.307 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 16:01:52.766 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 16:01:52.766 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 16:01:55.437 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 16:01:55.773 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 16:01:55.773 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 16:01:58.557 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 16:01:58.780 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 16:01:58.780 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 16:02:01.667 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 16:02:01.786 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 16:02:01.786 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 16:02:04.787 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 16:02:04.794 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 16:02:04.794 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 16:02:07.907 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 16:02:08.803 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 16:02:08.803 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 16:02:11.037 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 16:02:11.811 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 16:02:11.811 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 16:02:14.157 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 16:02:14.818 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 16:02:14.818 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 16:02:17.277 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 16:02:17.825 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 16:02:17.826 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 16:02:20.387 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 16:02:20.832 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 16:02:20.832 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 16:02:23.517 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 16:02:23.840 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 16:02:23.840 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 16:02:26.627 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 16:02:26.848 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 16:02:26.848 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 16:02:29.757 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 16:02:29.855 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 16:02:29.855 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 16:02:32.867 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 16:02:33.865 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 16:02:33.865 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 16:02:35.987 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 16:02:36.872 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 16:02:36.872 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 16:02:39.107 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 16:02:39.880 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 16:02:39.880 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 16:02:42.227 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 16:02:42.888 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 16:02:42.888 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 16:02:45.347 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 16:02:45.896 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 16:02:45.896 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 16:02:48.467 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 16:02:48.903 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 16:02:48.903 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 16:02:51.587 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 16:02:51.911 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 16:02:51.911 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 16:02:54.717 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 16:02:54.918 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 16:02:54.918 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 16:02:57.837 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 16:02:57.925 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 16:02:57.925 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 16:03:00.947 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 16:03:01.935 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 16:03:01.935 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 16:03:04.077 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 16:03:04.943 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 16:03:04.943 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 16:03:07.187 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 16:03:07.951 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 16:03:07.951 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 16:03:10.307 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 16:03:10.959 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 16:03:10.959 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 16:03:13.427 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 16:03:13.967 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 16:03:13.967 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 16:03:16.547 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 16:03:16.974 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 16:03:16.974 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 16:03:19.667 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 16:03:19.982 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 16:03:19.982 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 16:03:22.787 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 16:03:22.989 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 16:03:22.989 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 16:03:25.907 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 16:03:25.997 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 16:03:25.997 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 16:03:29.027 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 16:03:30.008 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 16:03:30.008 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 16:03:32.147 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 16:03:33.015 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 16:03:33.015 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 16:03:35.277 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 16:03:36.023 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 16:03:36.023 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 16:03:38.387 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 16:03:39.030 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 16:03:39.031 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 16:03:41.507 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 16:03:42.038 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 16:03:42.038 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 16:03:44.637 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 16:03:45.046 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 16:03:45.046 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 16:03:47.757 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 16:03:48.054 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 16:03:48.054 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 16:03:50.867 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 16:03:51.060 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 16:03:51.060 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 16:03:53.987 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 16:03:54.067 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 16:03:54.067 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 16:03:57.117 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 16:03:58.076 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 16:03:58.076 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 16:04:00.227 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 16:04:01.083 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 16:04:01.083 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 16:04:03.357 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 16:04:04.091 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 16:04:04.091 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 16:04:06.467 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 16:04:07.098 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 16:04:07.099 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 16:04:09.597 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 16:04:10.106 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 16:04:10.106 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 16:04:12.717 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 16:04:13.114 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 16:04:13.114 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 16:04:15.837 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 16:04:16.121 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 16:04:16.121 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 16:04:18.957 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 16:04:19.129 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 16:04:19.129 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 16:04:22.077 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 16:04:22.135 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 16:04:22.135 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 16:04:25.187 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 16:04:26.145 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 16:04:26.145 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 16:04:28.307 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 16:04:29.152 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 16:04:29.152 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 16:04:31.437 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 16:04:32.160 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 16:04:32.160 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 16:04:34.547 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 16:04:35.168 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 16:04:35.168 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 16:04:37.667 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 16:04:38.175 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 16:04:38.175 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 16:04:40.787 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 16:04:41.182 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 16:04:41.182 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 16:04:43.907 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 16:04:44.190 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 16:04:44.190 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 16:04:47.027 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 16:04:47.197 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 16:04:47.197 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 16:04:50.147 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 16:04:50.204 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 16:04:50.204 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 16:04:53.277 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 16:04:54.214 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 16:04:54.214 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 16:04:56.387 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 16:04:57.221 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 16:04:57.221 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 16:04:59.517 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 16:05:00.229 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 16:05:00.229 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 16:05:02.627 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 16:05:03.236 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 16:05:03.236 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 16:05:05.757 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 16:05:06.243 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 16:05:06.243 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 16:05:08.877 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 16:05:09.251 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 16:05:09.251 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 16:05:11.987 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 16:05:12.259 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 16:05:12.259 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 16:05:15.107 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 16:05:15.266 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 16:05:15.267 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 16:05:18.237 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 16:05:18.273 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 16:05:18.273 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 16:05:21.357 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 16:05:22.282 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 16:05:22.282 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 16:05:24.477 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 16:05:25.289 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 16:05:25.289 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 16:05:27.587 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 16:05:28.296 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 16:05:28.297 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 16:05:30.717 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 16:05:31.303 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 16:05:31.304 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 16:05:33.837 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 16:05:34.311 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 16:05:34.311 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 16:05:36.957 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 16:05:37.318 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 16:05:37.318 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 16:05:40.067 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 16:05:40.326 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 16:05:40.326 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 16:05:43.197 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 16:05:43.333 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 16:05:43.333 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 16:05:46.307 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 16:05:46.341 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 16:05:46.341 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 16:05:49.427 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 16:05:50.350 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 16:05:50.350 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 16:05:52.557 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 16:05:53.358 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 16:05:53.358 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 16:05:55.677 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 16:05:56.366 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 16:05:56.366 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 16:05:58.787 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 16:05:59.372 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 16:05:59.372 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 16:06:01.907 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 16:06:02.379 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 16:06:02.379 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 16:06:05.027 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 16:06:05.388 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 16:06:05.388 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 16:06:08.147 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 16:06:08.395 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 16:06:08.395 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 16:06:11.267 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 16:06:11.402 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 16:06:11.402 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 16:06:14.397 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 16:06:14.409 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 16:06:14.409 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 16:06:17.507 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 16:06:18.419 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 16:06:18.419 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 16:06:20.637 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 16:06:21.426 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 16:06:21.426 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 16:06:23.757 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 16:06:24.434 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 16:06:24.434 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 16:06:26.867 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 16:06:27.440 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 16:06:27.440 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 16:06:29.997 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 16:06:30.448 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 16:06:30.448 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 16:06:33.107 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 16:06:33.456 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 16:06:33.456 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 16:06:36.227 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 16:06:36.463 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 16:06:36.463 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 16:06:39.347 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 16:06:39.471 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 16:06:39.471 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 16:06:42.467 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 16:06:42.478 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 16:06:42.478 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 16:06:45.587 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 16:06:46.488 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 16:06:46.488 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 16:06:48.717 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 16:06:49.496 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 16:06:49.496 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 16:06:51.837 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 16:06:52.503 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 16:06:52.503 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 16:06:54.947 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 16:06:55.511 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 16:06:55.512 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 16:06:58.067 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 16:06:58.519 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 16:06:58.519 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 16:07:01.187 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 16:07:01.527 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 16:07:01.527 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 16:07:04.317 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 16:07:04.535 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 16:07:04.535 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 16:07:07.427 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 16:07:07.542 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 16:07:07.543 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 16:07:10.547 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 16:07:10.550 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 16:07:10.550 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 16:07:13.667 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 16:07:14.559 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 16:07:14.559 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 16:07:16.787 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 16:07:17.567 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 16:07:17.567 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 16:07:19.907 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 16:07:20.575 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 16:07:20.575 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 16:07:23.027 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 16:07:23.583 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 16:07:23.583 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 16:07:26.147 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 16:07:26.590 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 16:07:26.590 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 16:07:29.277 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 16:07:29.598 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 16:07:29.598 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 16:07:32.387 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 16:07:32.605 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 16:07:32.605 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 16:07:35.507 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 16:07:35.613 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 16:07:35.613 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 16:07:38.627 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 16:07:39.624 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 16:07:39.624 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 16:07:41.757 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 16:07:42.631 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 16:07:42.631 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 16:07:44.867 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 16:07:45.639 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 16:07:45.639 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 16:07:47.997 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 16:07:48.647 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 16:07:48.647 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 16:07:51.117 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 16:07:51.654 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 16:07:51.654 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 16:07:54.227 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 16:07:54.662 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 16:07:54.662 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 16:07:57.357 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 16:07:57.670 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 16:07:57.670 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 16:08:00.467 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 16:08:00.677 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 16:08:00.677 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 16:08:03.587 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 16:08:03.685 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 16:08:03.685 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 16:08:06.707 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 16:08:07.695 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 16:08:07.695 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 16:08:09.837 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 16:08:10.703 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 16:08:10.703 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 16:08:12.947 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 16:08:13.711 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 16:08:13.711 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 16:08:16.077 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 16:08:16.719 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 16:08:16.719 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 16:08:19.197 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 16:08:19.726 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 16:08:19.726 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 16:08:22.307 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 16:08:22.734 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 16:08:22.734 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 16:08:25.428 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 16:08:25.742 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 16:08:25.742 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 16:08:28.557 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 16:08:28.749 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 16:08:28.749 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 16:08:31.667 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 16:08:31.757 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 16:08:31.757 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 16:08:34.797 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 16:08:35.767 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 16:08:35.767 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 16:08:37.907 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 16:08:38.775 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 16:08:38.775 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 16:08:41.027 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 16:08:41.783 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 16:08:41.783 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 16:08:44.157 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 16:08:44.791 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 16:08:44.791 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 16:08:47.277 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 16:08:47.799 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 16:08:47.799 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 16:08:50.387 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 16:08:50.806 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 16:08:50.806 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 16:08:53.517 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 16:08:53.814 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 16:08:53.814 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 16:08:56.627 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 16:08:56.821 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 16:08:56.821 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 16:08:59.747 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 16:08:59.829 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 16:08:59.829 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 16:09:02.867 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 16:09:03.839 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 16:09:03.839 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 16:09:05.997 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 16:09:06.847 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 16:09:06.847 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 16:09:09.117 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 16:09:09.855 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 16:09:09.855 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 16:09:12.227 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 16:09:12.864 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 16:09:12.864 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 16:09:15.347 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 16:09:15.871 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 16:09:15.871 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 16:09:18.477 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 16:09:18.879 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 16:09:18.879 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 16:09:21.587 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 16:09:21.886 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 16:09:21.886 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 16:09:24.717 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 16:09:24.894 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 16:09:24.894 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 16:09:27.827 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 16:09:27.901 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 16:09:27.901 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 16:09:30.947 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 16:09:31.911 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 16:09:31.911 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 16:09:34.067 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 16:09:34.919 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 16:09:34.919 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 16:09:37.197 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 16:09:37.927 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 16:09:37.927 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 16:09:40.307 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 16:09:40.935 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 16:09:40.935 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 16:09:43.437 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 16:09:43.943 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 16:09:43.943 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 16:09:46.547 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 16:09:46.950 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 16:09:46.950 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 16:09:49.667 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 16:09:49.957 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 16:09:49.957 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 16:09:52.787 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 16:09:52.965 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 16:09:52.965 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 16:09:55.917 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 16:09:55.972 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 16:09:55.972 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 16:09:59.037 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 16:09:59.983 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 16:09:59.983 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 16:10:02.157 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 16:10:02.990 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 16:10:02.990 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 16:10:05.267 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 16:10:05.998 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 16:10:05.998 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 16:10:08.397 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 16:10:09.006 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 16:10:09.006 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 16:10:11.507 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 16:10:12.013 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 16:10:12.013 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 16:10:14.637 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 16:10:15.020 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 16:10:15.020 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 16:10:17.757 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 16:10:18.028 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 16:10:18.028 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 16:10:20.867 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 16:10:21.036 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 16:10:21.036 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 16:10:23.987 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 16:10:24.044 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 16:10:24.044 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 16:10:27.107 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 16:10:28.054 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 16:10:28.054 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 16:10:30.227 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 16:10:31.062 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 16:10:31.062 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 16:10:33.357 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 16:10:34.070 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 16:10:34.070 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 16:10:36.477 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 16:10:37.077 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 16:10:37.078 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 16:10:39.597 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 16:10:40.085 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 16:10:40.085 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 16:10:42.717 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 16:10:43.093 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 16:10:43.093 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 16:10:45.827 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 16:10:46.101 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 16:10:46.101 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 16:10:48.947 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 16:10:49.109 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 16:10:49.109 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 16:10:52.067 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 16:10:52.115 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 16:10:52.115 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 16:10:55.187 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 16:10:56.125 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 16:10:56.126 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 16:10:58.307 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 16:10:59.133 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 16:10:59.133 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 16:11:01.427 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 16:11:02.141 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 16:11:02.141 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 16:11:04.547 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 16:11:05.148 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 16:11:05.149 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 16:11:07.667 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 16:11:08.156 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 16:11:08.156 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 16:11:10.788 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 16:11:11.164 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 16:11:11.164 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 16:11:13.907 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 16:11:14.172 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 16:11:14.172 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 16:11:17.027 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 16:11:17.179 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 16:11:17.179 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 16:11:20.147 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 16:11:20.185 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 16:11:20.185 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 16:11:23.277 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 16:11:24.195 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 16:11:24.195 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 16:11:26.387 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 16:11:27.203 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 16:11:27.203 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 16:11:29.517 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 16:11:30.211 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 16:11:30.211 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 16:11:32.627 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 16:11:33.219 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 16:11:33.219 * MASTER <-> REPLICA sync started
+1:signal-handler (1657296695) Received SIGTERM scheduling shutdown...
+1:S 08 Jul 2022 16:11:35.757 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 16:11:35.825 # User requested shutdown...
+1:S 08 Jul 2022 16:11:35.825 * Calling fsync() on the AOF file.
+1:S 08 Jul 2022 16:11:35.828 * Saving the final RDB snapshot before exiting.
+1:S 08 Jul 2022 16:11:35.833 * DB saved on disk
+1:S 08 Jul 2022 16:11:35.834 * Removing the pid file.
+1:S 08 Jul 2022 16:11:35.834 # Redis is now ready to exit, bye bye...
+1:C 08 Jul 2022 16:11:42.510 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+1:C 08 Jul 2022 16:11:42.510 # Redis version=6.2.6, bits=64, commit=00000000, modified=0, pid=1, just started
+1:C 08 Jul 2022 16:11:42.510 # Configuration loaded
+1:M 08 Jul 2022 16:11:42.510 * monotonic clock: POSIX clock_gettime
+1:M 08 Jul 2022 16:11:42.511 * Node configuration loaded, I'm 55a08a29d6e99db627bb971846e1536260ef279a
+1:M 08 Jul 2022 16:11:42.511 * Running mode=cluster, port=7006.
+1:M 08 Jul 2022 16:11:42.511 # Server initialized
+1:M 08 Jul 2022 16:11:42.511 * Reading RDB preamble from AOF file...
+1:M 08 Jul 2022 16:11:42.511 * Loading RDB produced by version 6.2.6
+1:M 08 Jul 2022 16:11:42.511 * RDB age 2217 seconds
+1:M 08 Jul 2022 16:11:42.511 * RDB memory usage when created 2.50 Mb
+1:M 08 Jul 2022 16:11:42.511 * RDB has an AOF tail
+1:M 08 Jul 2022 16:11:42.511 # Done loading RDB, keys loaded: 0, keys expired: 0.
+1:M 08 Jul 2022 16:11:42.511 * Reading the remaining AOF tail...
+1:M 08 Jul 2022 16:11:42.511 * DB loaded from append only file: 0.000 seconds
+1:M 08 Jul 2022 16:11:42.511 * Ready to accept connections
+1:S 08 Jul 2022 16:11:42.512 * Before turning into a replica, using my own master parameters to synthesize a cached master: I may be able to synchronize with the new master with just a partial transfer.
+1:S 08 Jul 2022 16:11:42.512 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 16:11:42.512 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 16:11:42.512 # Cluster state changed: ok
+1:S 08 Jul 2022 16:11:45.667 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 16:11:46.520 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 16:11:46.520 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 16:11:48.787 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 16:11:49.528 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 16:11:49.528 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 16:11:50.029 # Cluster state changed: fail
+1:S 08 Jul 2022 16:11:51.907 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 16:11:52.536 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 16:11:52.536 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 16:11:55.027 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 16:11:55.545 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 16:11:55.545 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 16:11:58.147 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 16:11:58.552 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 16:11:58.552 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 16:12:01.277 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 16:12:01.560 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 16:12:01.560 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 16:12:04.387 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 16:12:04.568 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 16:12:04.568 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 16:12:07.517 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 16:12:07.575 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 16:12:07.575 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 16:12:10.637 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 16:12:11.586 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 16:12:11.586 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 16:12:13.757 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 16:12:14.593 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 16:12:14.593 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 16:12:16.867 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 16:12:17.601 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 16:12:17.601 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 16:12:19.997 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 16:12:20.609 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 16:12:20.609 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 16:12:23.107 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 16:12:23.617 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 16:12:23.617 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 16:12:26.237 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 16:12:26.626 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 16:12:26.626 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 16:12:29.347 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 16:12:29.633 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 16:12:29.633 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 16:12:32.476 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 16:12:32.641 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 16:12:32.641 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 16:12:35.597 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 16:12:35.649 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 16:12:35.649 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 16:12:38.707 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 16:12:39.659 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 16:12:39.659 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 16:12:41.837 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 16:12:42.666 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 16:12:42.667 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 16:12:44.946 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 16:12:45.675 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 16:12:45.675 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 16:12:48.067 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 16:12:48.683 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 16:12:48.683 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 16:12:51.197 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 16:12:51.691 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 16:12:51.691 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 16:12:54.317 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 16:12:54.700 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 16:12:54.700 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 16:12:57.427 # Error condition on socket for SYNC: No route to host
+1:S 08 Jul 2022 16:12:57.708 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 16:12:57.708 * MASTER <-> REPLICA sync started
+1:signal-handler (1657296779) Received SIGTERM scheduling shutdown...
+1:S 08 Jul 2022 16:12:59.413 # User requested shutdown...
+1:S 08 Jul 2022 16:12:59.413 * Calling fsync() on the AOF file.
+1:S 08 Jul 2022 16:12:59.415 * Saving the final RDB snapshot before exiting.
+1:S 08 Jul 2022 16:12:59.422 * DB saved on disk
+1:S 08 Jul 2022 16:12:59.422 * Removing the pid file.
+1:S 08 Jul 2022 16:12:59.422 # Redis is now ready to exit, bye bye...
+1:C 08 Jul 2022 16:13:17.271 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+1:C 08 Jul 2022 16:13:17.271 # Redis version=6.2.6, bits=64, commit=00000000, modified=0, pid=1, just started
+1:C 08 Jul 2022 16:13:17.271 # Configuration loaded
+1:M 08 Jul 2022 16:13:17.271 * monotonic clock: POSIX clock_gettime
+1:M 08 Jul 2022 16:13:17.272 * Node configuration loaded, I'm 55a08a29d6e99db627bb971846e1536260ef279a
+1:M 08 Jul 2022 16:13:17.272 * Running mode=cluster, port=7006.
+1:M 08 Jul 2022 16:13:17.272 # Server initialized
+1:M 08 Jul 2022 16:13:17.272 * Reading RDB preamble from AOF file...
+1:M 08 Jul 2022 16:13:17.272 * Loading RDB produced by version 6.2.6
+1:M 08 Jul 2022 16:13:17.272 * RDB age 2312 seconds
+1:M 08 Jul 2022 16:13:17.272 * RDB memory usage when created 2.50 Mb
+1:M 08 Jul 2022 16:13:17.272 * RDB has an AOF tail
+1:M 08 Jul 2022 16:13:17.272 # Done loading RDB, keys loaded: 0, keys expired: 0.
+1:M 08 Jul 2022 16:13:17.272 * Reading the remaining AOF tail...
+1:M 08 Jul 2022 16:13:17.272 * DB loaded from append only file: 0.000 seconds
+1:M 08 Jul 2022 16:13:17.272 * Ready to accept connections
+1:S 08 Jul 2022 16:13:17.273 * Before turning into a replica, using my own master parameters to synthesize a cached master: I may be able to synchronize with the new master with just a partial transfer.
+1:S 08 Jul 2022 16:13:17.273 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 16:13:17.273 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 16:13:17.273 # Cluster state changed: ok
+1:S 08 Jul 2022 16:13:17.275 * Non blocking connect for SYNC fired the event.
+1:S 08 Jul 2022 16:13:17.276 * Master replied to PING, replication can continue...
+1:S 08 Jul 2022 16:13:17.278 * Trying a partial resynchronization (request 997990e8e72eeb0dc00747d04ee8f7d9c7b60e75:1).
+1:S 08 Jul 2022 16:13:17.280 * Full resync from master: 44d938dc4eccb9f7a5dbe4b3d788cfb766c57077:0
+1:S 08 Jul 2022 16:13:17.280 * Discarding previously cached master state.
+1:S 08 Jul 2022 16:13:17.294 * MASTER <-> REPLICA sync: receiving 175 bytes from master to disk
+1:S 08 Jul 2022 16:13:17.294 * MASTER <-> REPLICA sync: Flushing old data
+1:S 08 Jul 2022 16:13:17.294 * MASTER <-> REPLICA sync: Loading DB in memory
+1:S 08 Jul 2022 16:13:17.298 * Loading RDB produced by version 6.2.6
+1:S 08 Jul 2022 16:13:17.298 * RDB age 0 seconds
+1:S 08 Jul 2022 16:13:17.298 * RDB memory usage when created 2.50 Mb
+1:S 08 Jul 2022 16:13:17.298 # Done loading RDB, keys loaded: 0, keys expired: 0.
+1:S 08 Jul 2022 16:13:17.298 * MASTER <-> REPLICA sync: Finished with success
+1:S 08 Jul 2022 16:13:17.298 * Background append only file rewriting started by pid 19
+1:S 08 Jul 2022 16:13:17.325 * AOF rewrite child asks to stop sending diffs.
+19:C 08 Jul 2022 16:13:17.325 * Parent agreed to stop sending diffs. Finalizing AOF...
+19:C 08 Jul 2022 16:13:17.325 * Concatenating 0.00 MB of AOF diff received from parent.
+19:C 08 Jul 2022 16:13:17.325 * SYNC append only file rewrite performed
+19:C 08 Jul 2022 16:13:17.325 * AOF rewrite: 0 MB of memory used by copy-on-write
+1:S 08 Jul 2022 16:13:17.374 * Background AOF rewrite terminated with success
+1:S 08 Jul 2022 16:13:17.374 * Residual parent diff successfully flushed to the rewritten AOF (0.00 MB)
+1:S 08 Jul 2022 16:13:17.374 * Background AOF rewrite finished successfully
+1:signal-handler (1657296885) Received SIGTERM scheduling shutdown...
+1:S 08 Jul 2022 16:14:45.477 # Connection with master lost.
+1:S 08 Jul 2022 16:14:45.477 * Caching the disconnected master state.
+1:S 08 Jul 2022 16:14:45.477 * Reconnecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 16:14:45.478 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 16:14:45.480 * Non blocking connect for SYNC fired the event.
+1:S 08 Jul 2022 16:14:45.481 # Error reply to PING from master: '-Reading from master: Operation now in progress'
+1:S 08 Jul 2022 16:14:45.521 # User requested shutdown...
+1:S 08 Jul 2022 16:14:45.521 * Calling fsync() on the AOF file.
+1:S 08 Jul 2022 16:14:45.523 * Saving the final RDB snapshot before exiting.
+1:S 08 Jul 2022 16:14:45.529 * DB saved on disk
+1:S 08 Jul 2022 16:14:45.529 * Removing the pid file.
+1:S 08 Jul 2022 16:14:45.529 # Redis is now ready to exit, bye bye...
+1:C 08 Jul 2022 16:15:05.406 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+1:C 08 Jul 2022 16:15:05.406 # Redis version=6.2.6, bits=64, commit=00000000, modified=0, pid=1, just started
+1:C 08 Jul 2022 16:15:05.406 # Configuration loaded
+1:M 08 Jul 2022 16:15:05.406 * monotonic clock: POSIX clock_gettime
+1:M 08 Jul 2022 16:15:05.407 * Node configuration loaded, I'm 55a08a29d6e99db627bb971846e1536260ef279a
+1:M 08 Jul 2022 16:15:05.407 * Running mode=cluster, port=7006.
+1:M 08 Jul 2022 16:15:05.407 # Server initialized
+1:M 08 Jul 2022 16:15:05.407 * Reading RDB preamble from AOF file...
+1:M 08 Jul 2022 16:15:05.407 * Loading RDB produced by version 6.2.6
+1:M 08 Jul 2022 16:15:05.407 * RDB age 108 seconds
+1:M 08 Jul 2022 16:15:05.407 * RDB memory usage when created 2.45 Mb
+1:M 08 Jul 2022 16:15:05.407 * RDB has an AOF tail
+1:M 08 Jul 2022 16:15:05.407 # Done loading RDB, keys loaded: 0, keys expired: 0.
+1:M 08 Jul 2022 16:15:05.407 * Reading the remaining AOF tail...
+1:M 08 Jul 2022 16:15:05.407 * DB loaded from append only file: 0.000 seconds
+1:M 08 Jul 2022 16:15:05.407 * Ready to accept connections
+1:S 08 Jul 2022 16:15:05.408 * Before turning into a replica, using my own master parameters to synthesize a cached master: I may be able to synchronize with the new master with just a partial transfer.
+1:S 08 Jul 2022 16:15:05.408 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 16:15:05.408 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 16:15:05.408 # Cluster state changed: ok
+1:S 08 Jul 2022 16:15:05.410 * Non blocking connect for SYNC fired the event.
+1:S 08 Jul 2022 16:15:05.413 * Master replied to PING, replication can continue...
+1:S 08 Jul 2022 16:15:05.416 * Trying a partial resynchronization (request 3bfd1adc21b27abe5a23024e51e9433f12d17621:1).
+1:S 08 Jul 2022 16:15:05.418 * Full resync from master: 17bb19cbcf28fc5da746af541d6c66c04e1e6316:0
+1:S 08 Jul 2022 16:15:05.418 * Discarding previously cached master state.
+1:S 08 Jul 2022 16:15:05.479 * MASTER <-> REPLICA sync: receiving 175 bytes from master to disk
+1:S 08 Jul 2022 16:15:05.480 * MASTER <-> REPLICA sync: Flushing old data
+1:S 08 Jul 2022 16:15:05.480 * MASTER <-> REPLICA sync: Loading DB in memory
+1:S 08 Jul 2022 16:15:05.485 * Loading RDB produced by version 6.2.6
+1:S 08 Jul 2022 16:15:05.485 * RDB age 0 seconds
+1:S 08 Jul 2022 16:15:05.485 * RDB memory usage when created 2.54 Mb
+1:S 08 Jul 2022 16:15:05.485 # Done loading RDB, keys loaded: 0, keys expired: 0.
+1:S 08 Jul 2022 16:15:05.485 * MASTER <-> REPLICA sync: Finished with success
+1:S 08 Jul 2022 16:15:05.485 * Background append only file rewriting started by pid 19
+1:S 08 Jul 2022 16:15:05.511 * AOF rewrite child asks to stop sending diffs.
+19:C 08 Jul 2022 16:15:05.511 * Parent agreed to stop sending diffs. Finalizing AOF...
+19:C 08 Jul 2022 16:15:05.511 * Concatenating 0.00 MB of AOF diff received from parent.
+19:C 08 Jul 2022 16:15:05.512 * SYNC append only file rewrite performed
+19:C 08 Jul 2022 16:15:05.512 * AOF rewrite: 0 MB of memory used by copy-on-write
+1:S 08 Jul 2022 16:15:05.609 * Background AOF rewrite terminated with success
+1:S 08 Jul 2022 16:15:05.610 * Residual parent diff successfully flushed to the rewritten AOF (0.00 MB)
+1:S 08 Jul 2022 16:15:05.610 * Background AOF rewrite finished successfully
+1:signal-handler (1657296951) Received SIGTERM scheduling shutdown...
+1:S 08 Jul 2022 16:15:51.783 # Connection with master lost.
+1:S 08 Jul 2022 16:15:51.783 * Caching the disconnected master state.
+1:S 08 Jul 2022 16:15:51.783 * Reconnecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 16:15:51.783 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 16:15:51.785 * Non blocking connect for SYNC fired the event.
+1:S 08 Jul 2022 16:15:51.786 # User requested shutdown...
+1:S 08 Jul 2022 16:15:51.786 * Calling fsync() on the AOF file.
+1:S 08 Jul 2022 16:15:51.787 * Saving the final RDB snapshot before exiting.
+1:S 08 Jul 2022 16:15:51.791 * DB saved on disk
+1:S 08 Jul 2022 16:15:51.791 * Removing the pid file.
+1:S 08 Jul 2022 16:15:51.791 # Redis is now ready to exit, bye bye...
+1:C 08 Jul 2022 16:16:13.434 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+1:C 08 Jul 2022 16:16:13.434 # Redis version=6.2.6, bits=64, commit=00000000, modified=0, pid=1, just started
+1:C 08 Jul 2022 16:16:13.434 # Configuration loaded
+1:M 08 Jul 2022 16:16:13.434 * monotonic clock: POSIX clock_gettime
+1:M 08 Jul 2022 16:16:13.434 * Node configuration loaded, I'm 55a08a29d6e99db627bb971846e1536260ef279a
+1:M 08 Jul 2022 16:16:13.435 * Running mode=cluster, port=7006.
+1:M 08 Jul 2022 16:16:13.435 # Server initialized
+1:M 08 Jul 2022 16:16:13.435 * Reading RDB preamble from AOF file...
+1:M 08 Jul 2022 16:16:13.435 * Loading RDB produced by version 6.2.6
+1:M 08 Jul 2022 16:16:13.435 * RDB age 68 seconds
+1:M 08 Jul 2022 16:16:13.435 * RDB memory usage when created 2.47 Mb
+1:M 08 Jul 2022 16:16:13.435 * RDB has an AOF tail
+1:M 08 Jul 2022 16:16:13.435 # Done loading RDB, keys loaded: 0, keys expired: 0.
+1:M 08 Jul 2022 16:16:13.435 * Reading the remaining AOF tail...
+1:M 08 Jul 2022 16:16:13.435 * DB loaded from append only file: 0.000 seconds
+1:M 08 Jul 2022 16:16:13.435 * Ready to accept connections
+1:S 08 Jul 2022 16:16:13.435 * Before turning into a replica, using my own master parameters to synthesize a cached master: I may be able to synchronize with the new master with just a partial transfer.
+1:S 08 Jul 2022 16:16:13.435 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 16:16:13.435 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 16:16:13.436 # Cluster state changed: ok
+1:S 08 Jul 2022 16:16:13.437 * Non blocking connect for SYNC fired the event.
+1:S 08 Jul 2022 16:16:13.440 * Master replied to PING, replication can continue...
+1:S 08 Jul 2022 16:16:13.442 * Trying a partial resynchronization (request ab4bbe2ab492115b1ae8c6ef5fcd35cb13a72a60:1).
+1:S 08 Jul 2022 16:16:13.444 * Full resync from master: b49114da9faf648951c8e1798046ad3d5cd366e1:0
+1:S 08 Jul 2022 16:16:13.444 * Discarding previously cached master state.
+1:S 08 Jul 2022 16:16:13.472 * MASTER <-> REPLICA sync: receiving 175 bytes from master to disk
+1:S 08 Jul 2022 16:16:13.473 * MASTER <-> REPLICA sync: Flushing old data
+1:S 08 Jul 2022 16:16:13.473 * MASTER <-> REPLICA sync: Loading DB in memory
+1:S 08 Jul 2022 16:16:13.477 * Loading RDB produced by version 6.2.6
+1:S 08 Jul 2022 16:16:13.477 * RDB age 0 seconds
+1:S 08 Jul 2022 16:16:13.477 * RDB memory usage when created 2.52 Mb
+1:S 08 Jul 2022 16:16:13.477 # Done loading RDB, keys loaded: 0, keys expired: 0.
+1:S 08 Jul 2022 16:16:13.477 * MASTER <-> REPLICA sync: Finished with success
+1:S 08 Jul 2022 16:16:13.478 * Background append only file rewriting started by pid 19
+1:S 08 Jul 2022 16:16:13.505 * AOF rewrite child asks to stop sending diffs.
+19:C 08 Jul 2022 16:16:13.505 * Parent agreed to stop sending diffs. Finalizing AOF...
+19:C 08 Jul 2022 16:16:13.505 * Concatenating 0.00 MB of AOF diff received from parent.
+19:C 08 Jul 2022 16:16:13.505 * SYNC append only file rewrite performed
+19:C 08 Jul 2022 16:16:13.506 * AOF rewrite: 0 MB of memory used by copy-on-write
+1:S 08 Jul 2022 16:16:13.536 * Background AOF rewrite terminated with success
+1:S 08 Jul 2022 16:16:13.536 * Residual parent diff successfully flushed to the rewritten AOF (0.00 MB)
+1:S 08 Jul 2022 16:16:13.536 * Background AOF rewrite finished successfully
+1:signal-handler (1657298253) Received SIGTERM scheduling shutdown...
+1:S 08 Jul 2022 16:37:33.274 # Connection with master lost.
+1:S 08 Jul 2022 16:37:33.275 * Caching the disconnected master state.
+1:S 08 Jul 2022 16:37:33.275 * Reconnecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 16:37:33.275 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 16:37:33.277 * Non blocking connect for SYNC fired the event.
+1:S 08 Jul 2022 16:37:33.278 # Error reply to PING from master: '-Reading from master: Operation now in progress'
+1:S 08 Jul 2022 16:37:33.299 # User requested shutdown...
+1:S 08 Jul 2022 16:37:33.299 * Calling fsync() on the AOF file.
+1:S 08 Jul 2022 16:37:33.301 * Saving the final RDB snapshot before exiting.
+1:S 08 Jul 2022 16:37:33.306 * DB saved on disk
+1:S 08 Jul 2022 16:37:33.306 * Removing the pid file.
+1:S 08 Jul 2022 16:37:33.306 # Redis is now ready to exit, bye bye...
+1:C 08 Jul 2022 16:37:56.298 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+1:C 08 Jul 2022 16:37:56.298 # Redis version=6.2.6, bits=64, commit=00000000, modified=0, pid=1, just started
+1:C 08 Jul 2022 16:37:56.298 # Configuration loaded
+1:M 08 Jul 2022 16:37:56.298 * monotonic clock: POSIX clock_gettime
+1:M 08 Jul 2022 16:37:56.299 * Node configuration loaded, I'm 55a08a29d6e99db627bb971846e1536260ef279a
+1:M 08 Jul 2022 16:37:56.299 * Running mode=cluster, port=7006.
+1:M 08 Jul 2022 16:37:56.299 # Server initialized
+1:M 08 Jul 2022 16:37:56.299 * Reading RDB preamble from AOF file...
+1:M 08 Jul 2022 16:37:56.299 * Loading RDB produced by version 6.2.6
+1:M 08 Jul 2022 16:37:56.299 * RDB age 1303 seconds
+1:M 08 Jul 2022 16:37:56.299 * RDB memory usage when created 2.46 Mb
+1:M 08 Jul 2022 16:37:56.299 * RDB has an AOF tail
+1:M 08 Jul 2022 16:37:56.299 # Done loading RDB, keys loaded: 0, keys expired: 0.
+1:M 08 Jul 2022 16:37:56.299 * Reading the remaining AOF tail...
+1:M 08 Jul 2022 16:37:56.299 * DB loaded from append only file: 0.000 seconds
+1:M 08 Jul 2022 16:37:56.299 * Ready to accept connections
+1:S 08 Jul 2022 16:37:56.300 * Before turning into a replica, using my own master parameters to synthesize a cached master: I may be able to synchronize with the new master with just a partial transfer.
+1:S 08 Jul 2022 16:37:56.300 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 16:37:56.300 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 16:37:56.300 # Cluster state changed: ok
+1:S 08 Jul 2022 16:37:56.302 * Non blocking connect for SYNC fired the event.
+1:S 08 Jul 2022 16:37:56.307 * Master replied to PING, replication can continue...
+1:S 08 Jul 2022 16:37:56.309 * Trying a partial resynchronization (request 356dcfd110ca237835b3b0559ba5bf4396688c86:1).
+1:S 08 Jul 2022 16:37:56.311 * Full resync from master: fcf0074b99ac5767cf8afec432553f60d4f053aa:0
+1:S 08 Jul 2022 16:37:56.311 * Discarding previously cached master state.
+1:S 08 Jul 2022 16:37:56.385 * MASTER <-> REPLICA sync: receiving 175 bytes from master to disk
+1:S 08 Jul 2022 16:37:56.385 * MASTER <-> REPLICA sync: Flushing old data
+1:S 08 Jul 2022 16:37:56.385 * MASTER <-> REPLICA sync: Loading DB in memory
+1:S 08 Jul 2022 16:37:56.390 * Loading RDB produced by version 6.2.6
+1:S 08 Jul 2022 16:37:56.390 * RDB age 0 seconds
+1:S 08 Jul 2022 16:37:56.390 * RDB memory usage when created 2.54 Mb
+1:S 08 Jul 2022 16:37:56.390 # Done loading RDB, keys loaded: 0, keys expired: 0.
+1:S 08 Jul 2022 16:37:56.390 * MASTER <-> REPLICA sync: Finished with success
+1:S 08 Jul 2022 16:37:56.391 * Background append only file rewriting started by pid 20
+1:S 08 Jul 2022 16:37:56.417 * AOF rewrite child asks to stop sending diffs.
+20:C 08 Jul 2022 16:37:56.417 * Parent agreed to stop sending diffs. Finalizing AOF...
+20:C 08 Jul 2022 16:37:56.417 * Concatenating 0.00 MB of AOF diff received from parent.
+20:C 08 Jul 2022 16:37:56.418 * SYNC append only file rewrite performed
+20:C 08 Jul 2022 16:37:56.418 * AOF rewrite: 0 MB of memory used by copy-on-write
+1:S 08 Jul 2022 16:37:56.501 * Background AOF rewrite terminated with success
+1:S 08 Jul 2022 16:37:56.501 * Residual parent diff successfully flushed to the rewritten AOF (0.00 MB)
+1:S 08 Jul 2022 16:37:56.501 * Background AOF rewrite finished successfully
+1:signal-handler (1657298402) Received SIGTERM scheduling shutdown...
+1:S 08 Jul 2022 16:40:02.543 # User requested shutdown...
+1:S 08 Jul 2022 16:40:02.543 * Calling fsync() on the AOF file.
+1:S 08 Jul 2022 16:40:02.545 * Saving the final RDB snapshot before exiting.
+1:S 08 Jul 2022 16:40:02.549 * DB saved on disk
+1:S 08 Jul 2022 16:40:02.549 * Removing the pid file.
+1:S 08 Jul 2022 16:40:02.549 # Redis is now ready to exit, bye bye...
+1:C 08 Jul 2022 16:40:19.858 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+1:C 08 Jul 2022 16:40:19.858 # Redis version=6.2.6, bits=64, commit=00000000, modified=0, pid=1, just started
+1:C 08 Jul 2022 16:40:19.858 # Configuration loaded
+1:M 08 Jul 2022 16:40:19.859 * monotonic clock: POSIX clock_gettime
+1:M 08 Jul 2022 16:40:19.859 * Node configuration loaded, I'm 55a08a29d6e99db627bb971846e1536260ef279a
+1:M 08 Jul 2022 16:40:19.860 * Running mode=cluster, port=7006.
+1:M 08 Jul 2022 16:40:19.860 # Server initialized
+1:M 08 Jul 2022 16:40:19.860 * Reading RDB preamble from AOF file...
+1:M 08 Jul 2022 16:40:19.860 * Loading RDB produced by version 6.2.6
+1:M 08 Jul 2022 16:40:19.860 * RDB age 143 seconds
+1:M 08 Jul 2022 16:40:19.860 * RDB memory usage when created 2.47 Mb
+1:M 08 Jul 2022 16:40:19.860 * RDB has an AOF tail
+1:M 08 Jul 2022 16:40:19.860 # Done loading RDB, keys loaded: 0, keys expired: 0.
+1:M 08 Jul 2022 16:40:19.860 * Reading the remaining AOF tail...
+1:M 08 Jul 2022 16:40:19.860 * DB loaded from append only file: 0.000 seconds
+1:M 08 Jul 2022 16:40:19.860 * Ready to accept connections
+1:S 08 Jul 2022 16:40:19.860 * Before turning into a replica, using my own master parameters to synthesize a cached master: I may be able to synchronize with the new master with just a partial transfer.
+1:S 08 Jul 2022 16:40:19.860 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 16:40:19.860 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 16:40:19.860 # Cluster state changed: ok
+1:S 08 Jul 2022 16:40:21.902 # Error condition on socket for SYNC: Connection refused
+1:S 08 Jul 2022 16:40:22.870 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 16:40:22.871 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 16:40:24.912 * Non blocking connect for SYNC fired the event.
+1:S 08 Jul 2022 16:40:24.913 * Master replied to PING, replication can continue...
+1:S 08 Jul 2022 16:40:24.915 * Trying a partial resynchronization (request 2bb73dfc0315d07da305131040b1e328799ede04:1).
+1:S 08 Jul 2022 16:40:24.917 * Full resync from master: 8df6680ea440842af8e1746510433e20274639f8:0
+1:S 08 Jul 2022 16:40:24.917 * Discarding previously cached master state.
+1:S 08 Jul 2022 16:40:24.923 * MASTER <-> REPLICA sync: receiving 175 bytes from master to disk
+1:S 08 Jul 2022 16:40:24.923 * MASTER <-> REPLICA sync: Flushing old data
+1:S 08 Jul 2022 16:40:24.923 * MASTER <-> REPLICA sync: Loading DB in memory
+1:S 08 Jul 2022 16:40:24.927 * Loading RDB produced by version 6.2.6
+1:S 08 Jul 2022 16:40:24.927 * RDB age 0 seconds
+1:S 08 Jul 2022 16:40:24.927 * RDB memory usage when created 2.54 Mb
+1:S 08 Jul 2022 16:40:24.927 # Done loading RDB, keys loaded: 0, keys expired: 0.
+1:S 08 Jul 2022 16:40:24.927 * MASTER <-> REPLICA sync: Finished with success
+1:S 08 Jul 2022 16:40:24.927 * Background append only file rewriting started by pid 21
+1:S 08 Jul 2022 16:40:24.954 * AOF rewrite child asks to stop sending diffs.
+21:C 08 Jul 2022 16:40:24.954 * Parent agreed to stop sending diffs. Finalizing AOF...
+21:C 08 Jul 2022 16:40:24.954 * Concatenating 0.00 MB of AOF diff received from parent.
+21:C 08 Jul 2022 16:40:24.954 * SYNC append only file rewrite performed
+21:C 08 Jul 2022 16:40:24.955 * AOF rewrite: 0 MB of memory used by copy-on-write
+1:S 08 Jul 2022 16:40:24.979 * Background AOF rewrite terminated with success
+1:S 08 Jul 2022 16:40:24.979 * Residual parent diff successfully flushed to the rewritten AOF (0.00 MB)
+1:S 08 Jul 2022 16:40:24.979 * Background AOF rewrite finished successfully
+1:signal-handler (1657298892) Received SIGTERM scheduling shutdown...
+1:S 08 Jul 2022 16:48:12.410 # User requested shutdown...
+1:S 08 Jul 2022 16:48:12.410 * Calling fsync() on the AOF file.
+1:S 08 Jul 2022 16:48:12.410 * Saving the final RDB snapshot before exiting.
+1:S 08 Jul 2022 16:48:12.417 * DB saved on disk
+1:S 08 Jul 2022 16:48:12.417 * Removing the pid file.
+1:S 08 Jul 2022 16:48:12.417 # Redis is now ready to exit, bye bye...
+1:C 08 Jul 2022 16:48:26.775 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+1:C 08 Jul 2022 16:48:26.775 # Redis version=6.2.6, bits=64, commit=00000000, modified=0, pid=1, just started
+1:C 08 Jul 2022 16:48:26.775 # Configuration loaded
+1:M 08 Jul 2022 16:48:26.775 * monotonic clock: POSIX clock_gettime
+1:M 08 Jul 2022 16:48:26.776 * Node configuration loaded, I'm 55a08a29d6e99db627bb971846e1536260ef279a
+1:M 08 Jul 2022 16:48:26.776 * Running mode=cluster, port=7006.
+1:M 08 Jul 2022 16:48:26.776 # Server initialized
+1:M 08 Jul 2022 16:48:26.776 * Reading RDB preamble from AOF file...
+1:M 08 Jul 2022 16:48:26.776 * Loading RDB produced by version 6.2.6
+1:M 08 Jul 2022 16:48:26.777 * RDB age 482 seconds
+1:M 08 Jul 2022 16:48:26.777 * RDB memory usage when created 2.50 Mb
+1:M 08 Jul 2022 16:48:26.777 * RDB has an AOF tail
+1:M 08 Jul 2022 16:48:26.777 # Done loading RDB, keys loaded: 0, keys expired: 0.
+1:M 08 Jul 2022 16:48:26.777 * Reading the remaining AOF tail...
+1:M 08 Jul 2022 16:48:26.777 * DB loaded from append only file: 0.000 seconds
+1:M 08 Jul 2022 16:48:26.777 * Ready to accept connections
+1:S 08 Jul 2022 16:48:26.777 * Before turning into a replica, using my own master parameters to synthesize a cached master: I may be able to synchronize with the new master with just a partial transfer.
+1:S 08 Jul 2022 16:48:26.777 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 16:48:26.777 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 16:48:26.777 # Cluster state changed: ok
+1:S 08 Jul 2022 16:48:28.829 # Error condition on socket for SYNC: Connection refused
+1:S 08 Jul 2022 16:48:29.685 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 16:48:29.685 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 16:48:29.686 * Non blocking connect for SYNC fired the event.
+1:S 08 Jul 2022 16:48:29.688 * Master replied to PING, replication can continue...
+1:S 08 Jul 2022 16:48:29.690 * Trying a partial resynchronization (request 59d34762f890c03acefe1bb755edc983ac589cce:1).
+1:S 08 Jul 2022 16:48:29.692 * Full resync from master: 92db5b42e0143d46c2308ca25d4be1f3c0ed25d9:0
+1:S 08 Jul 2022 16:48:29.692 * Discarding previously cached master state.
+1:S 08 Jul 2022 16:48:29.758 * MASTER <-> REPLICA sync: receiving 175 bytes from master to disk
+1:S 08 Jul 2022 16:48:29.758 * MASTER <-> REPLICA sync: Flushing old data
+1:S 08 Jul 2022 16:48:29.759 * MASTER <-> REPLICA sync: Loading DB in memory
+1:S 08 Jul 2022 16:48:29.763 * Loading RDB produced by version 6.2.6
+1:S 08 Jul 2022 16:48:29.763 * RDB age 0 seconds
+1:S 08 Jul 2022 16:48:29.763 * RDB memory usage when created 2.50 Mb
+1:S 08 Jul 2022 16:48:29.763 # Done loading RDB, keys loaded: 0, keys expired: 0.
+1:S 08 Jul 2022 16:48:29.763 * MASTER <-> REPLICA sync: Finished with success
+1:S 08 Jul 2022 16:48:29.763 * Background append only file rewriting started by pid 20
+1:S 08 Jul 2022 16:48:29.790 * AOF rewrite child asks to stop sending diffs.
+20:C 08 Jul 2022 16:48:29.790 * Parent agreed to stop sending diffs. Finalizing AOF...
+20:C 08 Jul 2022 16:48:29.790 * Concatenating 0.00 MB of AOF diff received from parent.
+20:C 08 Jul 2022 16:48:29.790 * SYNC append only file rewrite performed
+20:C 08 Jul 2022 16:48:29.791 * AOF rewrite: 0 MB of memory used by copy-on-write
+1:S 08 Jul 2022 16:48:29.887 * Background AOF rewrite terminated with success
+1:S 08 Jul 2022 16:48:29.887 * Residual parent diff successfully flushed to the rewritten AOF (0.00 MB)
+1:S 08 Jul 2022 16:48:29.887 * Background AOF rewrite finished successfully
+1:S 08 Jul 2022 17:15:37.235 * FAIL message received from b1b78c78a396d39bbc0aece94c99bd3c59a22b47 about c4e3cbb8bcf20b502ca88072b5d7a955e8ebad39
+1:S 08 Jul 2022 17:17:50.276 * Clear FAIL state for node c4e3cbb8bcf20b502ca88072b5d7a955e8ebad39: replica is reachable again.
+1:S 08 Jul 2022 17:18:01.240 # Connection with master lost.
+1:S 08 Jul 2022 17:18:01.240 * Caching the disconnected master state.
+1:S 08 Jul 2022 17:18:01.240 * Reconnecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 17:18:01.240 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 17:18:01.242 * Non blocking connect for SYNC fired the event.
+1:S 08 Jul 2022 17:18:01.243 # Error reply to PING from master: '-Reading from master: Operation now in progress'
+1:S 08 Jul 2022 17:18:01.485 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 17:18:01.485 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 17:18:03.542 # Error condition on socket for SYNC: Connection refused
+1:S 08 Jul 2022 17:18:04.497 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 17:18:04.497 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 17:18:06.544 # Error condition on socket for SYNC: Connection refused
+1:S 08 Jul 2022 17:18:07.510 * Connecting to MASTER 172.30.149.130:8003
+1:S 08 Jul 2022 17:18:07.510 * MASTER <-> REPLICA sync started
+1:S 08 Jul 2022 17:18:08.518 * Marking node c45e0ad6602cef609fc19b029b5e837baffc3f07 as failing (quorum reached).
+1:S 08 Jul 2022 17:18:08.617 # Start of election delayed for 540 milliseconds (rank #0, offset 2464).
+1:S 08 Jul 2022 17:18:09.219 # Starting a failover election for epoch 6.
+1:S 08 Jul 2022 17:18:09.231 # Failover election won: I'm the new master.
+1:S 08 Jul 2022 17:18:09.231 # configEpoch set to 6 after successful failover
+1:M 08 Jul 2022 17:18:09.231 * Discarding previously cached master state.
+1:M 08 Jul 2022 17:18:09.231 # Setting secondary replication ID to 92db5b42e0143d46c2308ca25d4be1f3c0ed25d9, valid up to offset: 2465. New replication ID is 05ebb2532f5d465a37a48c181b42114cbe59660e
+1:M 08 Jul 2022 17:18:28.262 * Replica 192.168.96.1:7003 asks for synchronization
+1:M 08 Jul 2022 17:18:28.262 * Partial resynchronization not accepted: Replication ID mismatch (Replica asked for 'd6ae36a8ce3416ae07248f6e2c6148b6d274c165', my replication IDs are '05ebb2532f5d465a37a48c181b42114cbe59660e' and '92db5b42e0143d46c2308ca25d4be1f3c0ed25d9')
+1:M 08 Jul 2022 17:18:28.262 * Starting BGSAVE for SYNC with target: disk
+1:M 08 Jul 2022 17:18:28.262 * Background saving started by pid 22
+22:C 08 Jul 2022 17:18:28.266 * DB saved on disk
+22:C 08 Jul 2022 17:18:28.266 * RDB: 0 MB of memory used by copy-on-write
+1:M 08 Jul 2022 17:18:28.290 * Background saving terminated with success
+1:M 08 Jul 2022 17:18:28.290 * Synchronization with replica 192.168.96.1:7003 succeeded
+1:M 08 Jul 2022 17:18:28.624 * Clear FAIL state for node c45e0ad6602cef609fc19b029b5e837baffc3f07: master without slots is reachable again.
+1:M 08 Jul 2022 17:23:17.699 # Connection with replica 192.168.96.1:7003 lost.
+1:signal-handler (1657300997) Received SIGTERM scheduling shutdown...
+1:M 08 Jul 2022 17:23:17.996 # User requested shutdown...
+1:M 08 Jul 2022 17:23:17.996 * Calling fsync() on the AOF file.
+1:M 08 Jul 2022 17:23:17.996 * Saving the final RDB snapshot before exiting.
+1:M 08 Jul 2022 17:23:18.002 * DB saved on disk
+1:M 08 Jul 2022 17:23:18.002 * Removing the pid file.
+1:M 08 Jul 2022 17:23:18.002 # Redis is now ready to exit, bye bye...
+1:C 12 Jul 2022 06:54:47.653 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+1:C 12 Jul 2022 06:54:47.654 # Redis version=6.2.6, bits=64, commit=00000000, modified=0, pid=1, just started
+1:C 12 Jul 2022 06:54:47.654 # Configuration loaded
+1:M 12 Jul 2022 06:54:47.654 * monotonic clock: POSIX clock_gettime
+1:M 12 Jul 2022 06:54:47.655 * Node configuration loaded, I'm 55a08a29d6e99db627bb971846e1536260ef279a
+1:M 12 Jul 2022 06:54:47.655 * Running mode=cluster, port=7006.
+1:M 12 Jul 2022 06:54:47.655 # Server initialized
+1:M 12 Jul 2022 06:54:47.655 # WARNING overcommit_memory is set to 0! Background save may fail under low memory condition. To fix this issue add 'vm.overcommit_memory = 1' to /etc/sysctl.conf and then reboot or run the command 'sysctl vm.overcommit_memory=1' for this to take effect.
+1:M 12 Jul 2022 06:54:47.656 * Reading RDB preamble from AOF file...
+1:M 12 Jul 2022 06:54:47.656 * Loading RDB produced by version 6.2.6
+1:M 12 Jul 2022 06:54:47.656 * RDB age 309978 seconds
+1:M 12 Jul 2022 06:54:47.656 * RDB memory usage when created 2.48 Mb
+1:M 12 Jul 2022 06:54:47.656 * RDB has an AOF tail
+1:M 12 Jul 2022 06:54:47.656 # Done loading RDB, keys loaded: 0, keys expired: 0.
+1:M 12 Jul 2022 06:54:47.656 * Reading the remaining AOF tail...
+1:M 12 Jul 2022 06:54:47.656 * DB loaded from append only file: 0.001 seconds
+1:M 12 Jul 2022 06:54:47.656 * Ready to accept connections
+1:M 12 Jul 2022 06:54:49.661 # Cluster state changed: ok
+1:M 12 Jul 2022 06:54:55.173 # Cluster state changed: fail
