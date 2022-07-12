@@ -1531,3 +1531,72 @@
 1:S 12 Jul 2022 09:18:47.575 # Error condition on socket for SYNC: Connection refused
 1:S 12 Jul 2022 09:18:48.576 * Connecting to MASTER 172.30.149.130:8006
 1:S 12 Jul 2022 09:18:48.576 * MASTER <-> REPLICA sync started
+1:S 12 Jul 2022 09:19:09.626 # Error condition on socket for SYNC: Connection refused
+1:S 12 Jul 2022 09:19:10.628 * Connecting to MASTER 172.30.149.130:8006
+1:S 12 Jul 2022 09:19:10.628 * MASTER <-> REPLICA sync started
+1:S 12 Jul 2022 09:19:31.677 # Error condition on socket for SYNC: Connection refused
+1:S 12 Jul 2022 09:19:31.678 * Connecting to MASTER 172.30.149.130:8006
+1:S 12 Jul 2022 09:19:31.678 * MASTER <-> REPLICA sync started
+1:S 12 Jul 2022 09:19:52.714 # Error condition on socket for SYNC: Connection refused
+1:S 12 Jul 2022 09:19:52.727 * Connecting to MASTER 172.30.149.130:8006
+1:S 12 Jul 2022 09:19:52.727 * MASTER <-> REPLICA sync started
+1:S 12 Jul 2022 09:20:13.772 # Error condition on socket for SYNC: Connection refused
+1:S 12 Jul 2022 09:20:13.779 * Connecting to MASTER 172.30.149.130:8006
+1:S 12 Jul 2022 09:20:13.779 * MASTER <-> REPLICA sync started
+1:S 12 Jul 2022 09:20:34.813 # Error condition on socket for SYNC: Connection refused
+1:S 12 Jul 2022 09:20:34.829 * Connecting to MASTER 172.30.149.130:8006
+1:S 12 Jul 2022 09:20:34.829 * MASTER <-> REPLICA sync started
+1:S 12 Jul 2022 09:20:55.869 # Error condition on socket for SYNC: Connection refused
+1:S 12 Jul 2022 09:20:55.878 * Connecting to MASTER 172.30.149.130:8006
+1:S 12 Jul 2022 09:20:55.878 * MASTER <-> REPLICA sync started
+1:S 12 Jul 2022 09:21:16.912 # Error condition on socket for SYNC: Connection refused
+1:S 12 Jul 2022 09:21:16.927 * Connecting to MASTER 172.30.149.130:8006
+1:S 12 Jul 2022 09:21:16.927 * MASTER <-> REPLICA sync started
+1:S 12 Jul 2022 09:21:37.973 # Error condition on socket for SYNC: Connection refused
+1:S 12 Jul 2022 09:21:37.976 * Connecting to MASTER 172.30.149.130:8006
+1:S 12 Jul 2022 09:21:37.976 * MASTER <-> REPLICA sync started
+1:S 12 Jul 2022 09:21:59.033 # Error condition on socket for SYNC: Connection refused
+1:S 12 Jul 2022 09:22:00.028 * Connecting to MASTER 172.30.149.130:8006
+1:S 12 Jul 2022 09:22:00.028 * MASTER <-> REPLICA sync started
+1:S 12 Jul 2022 09:22:21.068 # Error condition on socket for SYNC: Connection refused
+1:S 12 Jul 2022 09:22:21.079 * Connecting to MASTER 172.30.149.130:8006
+1:S 12 Jul 2022 09:22:21.079 * MASTER <-> REPLICA sync started
+1:S 12 Jul 2022 09:22:42.107 # Error condition on socket for SYNC: Connection refused
+1:S 12 Jul 2022 09:22:42.129 * Connecting to MASTER 172.30.149.130:8006
+1:S 12 Jul 2022 09:22:42.129 * MASTER <-> REPLICA sync started
+1:S 12 Jul 2022 09:23:03.176 # Error condition on socket for SYNC: Connection refused
+1:S 12 Jul 2022 09:23:03.179 * Connecting to MASTER 172.30.149.130:8006
+1:S 12 Jul 2022 09:23:03.179 * MASTER <-> REPLICA sync started
+1:S 12 Jul 2022 09:23:24.229 # Error condition on socket for SYNC: Connection refused
+1:S 12 Jul 2022 09:23:24.230 * Connecting to MASTER 172.30.149.130:8006
+1:S 12 Jul 2022 09:23:24.230 * MASTER <-> REPLICA sync started
+1:S 12 Jul 2022 09:23:45.286 # Error condition on socket for SYNC: Connection refused
+1:S 12 Jul 2022 09:23:46.280 * Connecting to MASTER 172.30.149.130:8006
+1:S 12 Jul 2022 09:23:46.280 * MASTER <-> REPLICA sync started
+1:S 12 Jul 2022 09:24:07.308 # Error condition on socket for SYNC: Connection refused
+1:S 12 Jul 2022 09:24:07.328 * Connecting to MASTER 172.30.149.130:8006
+1:S 12 Jul 2022 09:24:07.329 * MASTER <-> REPLICA sync started
+1:S 12 Jul 2022 09:24:28.377 # Error condition on socket for SYNC: Connection refused
+1:S 12 Jul 2022 09:24:28.378 * Connecting to MASTER 172.30.149.130:8006
+1:S 12 Jul 2022 09:24:28.378 * MASTER <-> REPLICA sync started
+1:S 12 Jul 2022 09:24:49.437 # Error condition on socket for SYNC: Connection refused
+1:S 12 Jul 2022 09:24:50.428 * Connecting to MASTER 172.30.149.130:8006
+1:S 12 Jul 2022 09:24:50.428 * MASTER <-> REPLICA sync started
+1:S 12 Jul 2022 09:25:11.481 # Error condition on socket for SYNC: Connection refused
+1:S 12 Jul 2022 09:25:12.481 * Connecting to MASTER 172.30.149.130:8006
+1:S 12 Jul 2022 09:25:12.481 * MASTER <-> REPLICA sync started
+1:S 12 Jul 2022 09:25:33.514 # Error condition on socket for SYNC: Connection refused
+1:S 12 Jul 2022 09:25:33.528 * Connecting to MASTER 172.30.149.130:8006
+1:S 12 Jul 2022 09:25:33.528 * MASTER <-> REPLICA sync started
+1:S 12 Jul 2022 09:25:54.561 # Error condition on socket for SYNC: Connection refused
+1:S 12 Jul 2022 09:25:54.576 * Connecting to MASTER 172.30.149.130:8006
+1:S 12 Jul 2022 09:25:54.576 * MASTER <-> REPLICA sync started
+1:S 12 Jul 2022 09:26:15.617 # Error condition on socket for SYNC: Connection refused
+1:S 12 Jul 2022 09:26:15.626 * Connecting to MASTER 172.30.149.130:8006
+1:S 12 Jul 2022 09:26:15.626 * MASTER <-> REPLICA sync started
+1:S 12 Jul 2022 09:26:36.672 # Error condition on socket for SYNC: Connection refused
+1:S 12 Jul 2022 09:26:36.676 * Connecting to MASTER 172.30.149.130:8006
+1:S 12 Jul 2022 09:26:36.676 * MASTER <-> REPLICA sync started
+1:S 12 Jul 2022 09:26:57.713 # Error condition on socket for SYNC: Connection refused
+1:S 12 Jul 2022 09:26:57.727 * Connecting to MASTER 172.30.149.130:8006
+1:S 12 Jul 2022 09:26:57.727 * MASTER <-> REPLICA sync started

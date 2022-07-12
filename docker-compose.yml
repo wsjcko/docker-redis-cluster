@@ -251,6 +251,7 @@ networks:
 # 4b5f52f2496ef5dd64b25b5bdf83ca1da34d4dec 172.30.149.130:8002@18002 master - 0 1657266753731 4 connected
 # bb9b17abddd03f7620c9d2b17af3a0453e03e456 172.30.149.130:8004@18004 slave b1b78c78a396d39bbc0aece94c99bd3c59a22b47 0 1657266752225 5 connected
 
+# 在手动分配哈希槽时，需要把 16384 个槽都分配完，否则Redis 集群无法正常工作
 # 为主节点分配槽(总16384)
 # redis-cli -h 172.30.149.130 -p 8001 -a dm5fD%rvPtq cluster addslots {0..5500}
 # redis-cli -h 172.30.149.130 -p 8002 -a dm5fD%rvPtq cluster addslots {5501..11000}
